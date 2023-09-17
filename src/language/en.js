@@ -19,8 +19,7 @@ export const english = {
   "Pay after service": "Pay after service",
   Use: "Use",
   "Paid by wallet": "Paid by wallet",
-  "Now you can track your products easily whenever you want.":
-    "Now you can track your products easily whenever you want.",
+  "Now you can track your products easily whenever you want.":    "Now you can track your products easily whenever you want.",
   "Label As": "Label As",
   "out of limits": "out of limits",
   "You have balance in  your wallet": "You have balance in  your wallet",
@@ -30,8 +29,7 @@ export const english = {
   "more for free delivery": "more for free delivery",
   "Checking theme and rtl": "Checking theme and rtl",
   "Download ON": "Download ON",
-  "No items added in your cart. Please add product to your cart list.":
-    "No items added in your cart. Please add product to your cart list.",
+  "No items added in your cart. Please add product to your cart list.":    "No items added in your cart. Please add product to your cart list.",
   "GET IT ON": "GET IT ON",
   "Become a store owner": "Become a store owner",
   "Search for items or store...": "Search for items or store...",
@@ -42,8 +40,7 @@ export const english = {
   "e-Commerce !": "e-Commerce !",
   "Venture Starts Here": "Venture Starts Here",
   "A module has been selected.": "A module has been selected.",
-  "Select the type of stores for your order":
-    "Select the type of stores for your order",
+  "Select the type of stores for your order":    "Select the type of stores for your order",
   "Search location here...": "Search location here...",
   "Login required.": "Login required.",
   "New delivery address selected.": "New delivery address selected.",
@@ -60,11 +57,9 @@ export const english = {
   "Please give a phone number": "Please give a phone number",
   "Search a category": "Search a category",
   "New on": "New on",
-  "You got a free home delivery service":
-    "You got a free home delivery service",
+  "You got a free home delivery service":    "You got a free home delivery service",
   "Instant Same Day Delivery": "Instant Same Day Delivery",
-  "Send your parcel anywhere in country instantly & Safely":
-    "Send your parcel anywhere in country instantly & Safely",
+  "Send your parcel anywhere in country instantly & Safely":    "Send your parcel anywhere in country instantly & Safely",
   "What are you sending ?": "What are you sending ?",
   "Parcel Delivery Information": "Parcel Delivery Information",
   "Sender Information": "Sender Information",
@@ -96,16 +91,13 @@ export const english = {
   "Charge Paid By": "Charge Paid By",
   "Faster and safer way to send money": "Faster and safer way to send money",
   Send: "Send",
-
   "Confirm Parcel Request": "Confirm Parcel Request",
   "All Stores": "All Stores",
   "Take away": "Take away",
-  "If you want to change store type, it will reset your cart and other related cache data.":
-    "If you want to change store type, it will reset your cart and other related cache data.",
+  "If you want to change store type, it will reset your cart and other related cache data.":    "If you want to change store type, it will reset your cart and other related cache data.",
   Change: "Change",
   Location: "Location",
-  "You must accept the terms and conditions":
-    "You must accept the terms and conditions",
+  "You must accept the terms and conditions":    "You must accept the terms and conditions",
   "terms and conditions": "terms and conditions",
   "Available at": "Available at",
   to: "to",
@@ -113,19 +105,16 @@ export const english = {
   "Minimum purchase": "Minimum purchase",
   "Maximum discount": "Maximum discount",
   Chat: "Chat",
-  "Sender or Receiver location is missing":
-    "Sender or Receiver location is missing",
+  "Sender or Receiver location is missing":    "Sender or Receiver location is missing",
   "please login first": "please login first",
-  "Wallet balance is below total amount.":
-    "Wallet balance is below total amount.",
+  "Wallet balance is below total amount.":    "Wallet balance is below total amount.",
   Color: "Color",
   "Buy Now": "Buy Now",
   "Similar Products": "Similar Products",
   Copy: "Copy",
   "No transaction found": "No transaction found",
   "insufficient amount": "insufficient amount",
-  "You have item from another store in cart. If you continue, your all previous item from cart will be removed":
-    "You have item from another store in cart. If you continue, your all previous item from cart will be removed",
+  "You have item from another store in cart. If you continue, your all previous item from cart will be removed":    "You have item from another store in cart. If you continue, your all previous item from cart will be removed",
   "Theme Settings": "Theme Settings",
   "Change language": "Change language",
   "Floor:": "Floor:",
@@ -135,16 +124,13 @@ export const english = {
   "Price Range": "Price Range",
   "Search for items...": "Search for items...",
   "Shipping policy": "Shipping policy",
-  "Your cart has been cleared successfully. Now try to add the product again.":
-    "Your cart has been cleared successfully. Now try to add the product again.",
+  "Your cart has been cleared successfully. Now try to add the product again.":    "Your cart has been cleared successfully. Now try to add the product again.",
   "items in your cart": "items in your cart",
   "No Favourite Items Found": "No Favourite Items Found",
   "No Favourite Stores Found": "No Favourite Stores Found",
-  "You have nothing in your cart to checkout.":
-    "You have nothing in your cart to checkout.",
+  "You have nothing in your cart to checkout.":    "You have nothing in your cart to checkout.",
   "Choose Your Interests": "Choose Your Interests",
-  "Get personalized food recommendations.":
-    "Get personalized food recommendations.",
+  "Get personalized food recommendations.":    "Get personalized food recommendations.",
   "Filter your search results": "Filter your search results",
   "Sort By": "Sort By",
   Ascending: "Ascending",
@@ -219,8 +205,7 @@ export const english = {
   Address: "Address",
   "Payment Details": "Payment Details",
   "Place Order": "Place Order",
-  "Company / Individual name is required":
-    "Company / Individual name is required",
+  "Company / Individual name is required":    "Company / Individual name is required",
   "Phone number is not valid": "Phone number is not valid",
   "Phone number is required": "Phone number is required",
   "Address is required": "Address is required",
@@ -228,12 +213,10 @@ export const english = {
   "Name is required": "Name is required",
   "Phone is required": "Phone is required",
   "Must be a valid email": "Must be a valid email",
-  "Password is too short - should be 6 chars minimum.":
-    "Password is too short - should be 6 chars minimum.",
+  "Password is too short - should be 6 chars minimum.":    "Password is too short - should be 6 chars minimum.",
   "Email is required": "Email is required",
   "No password provided.": "No password provided.",
-  "Password is too short - should be 8 chars minimum.":
-    "Password is too short - should be 8 chars minimum.",
+  "Password is too short - should be 8 chars minimum.":    "Password is too short - should be 8 chars minimum.",
   "Passwords must match": "Passwords must match",
   "Form With Formik": "Form With Formik",
   "General Information": "General Information",
@@ -243,8 +226,7 @@ export const english = {
   "Select Identity Type": "Select Identity Type",
   "Contact Person": "Contact Person",
   "Same as general information": "Same as general information",
-  "Please upload your prescription image":
-    "Please upload your prescription image",
+  "Please upload your prescription image":    "Please upload your prescription image",
   "Account Information": "Account Information",
   "Confirm Password": "Confirm Password",
   Submit: "Submit",
@@ -260,13 +242,11 @@ export const english = {
   "Select  Zones": "Select  Zones",
   "Clear all Filter": "Clear all Filter",
   "Open Delete Dialog": "Open Delete Dialog",
-  "Are Your Sure You Want to Delete This Zone ?":
-    "Are Your Sure You Want to Delete This Zone ?",
+  "Are Your Sure You Want to Delete This Zone ?":    "Are Your Sure You Want to Delete This Zone ?",
   "This operation cannot be undone": "This operation cannot be undone",
   "No, Keep this ": "No, Keep this ",
   "Yes, Delete": "Yes, Delete",
-  "Provider Details With Cards and Tabs":
-    "Provider Details With Cards and Tabs",
+  "Provider Details With Cards and Tabs":    "Provider Details With Cards and Tabs",
   Search: "Search",
   Logout: "Logout",
   Overview: "Overview",
@@ -278,13 +258,10 @@ export const english = {
   "Add Address": "Add Address",
   "My Addresses": "My Addresses",
   previous: "previous",
-  "Earn money to your wallet by completing the offer & challenged":
-    "Earn money to your wallet by completing the offer & challenged",
-  "Convert your loyalty points into wallet money":
-    "Convert your loyalty points into wallet money",
+  "Earn money to your wallet by completing the offer & challenged":    "Earn money to your wallet by completing the offer & challenged",
+  "Convert your loyalty points into wallet money":    "Convert your loyalty points into wallet money",
   "Send your wallet money while order": "Send your wallet money while order",
-  "Admin also reward their top customers with wallet money":
-    "Admin also reward their top customers with wallet money",
+  "Admin also reward their top customers with wallet money":    "Admin also reward their top customers with wallet money",
   ongoing: "ongoing",
   Reviews: "Reviews",
   "Edit Personal Details": "Edit Personal Details",
@@ -301,10 +278,7 @@ export const english = {
   "Last name is required": "Last name is required",
   "Address Form": "Address Form",
   "items selected": "items selected",
-
-  "Image Format - JPG, Pong, ZPEG, GIF Image Size - Maximum Size 2Mb Image Ratio - 1: 1":
-    "Image Format - JPG, Pong, ZPEG, GIF Image Size - Maximum Size 2Mb Image Ratio - 1: 1",
-
+  "Image Format - JPG, Pong, ZPEG, GIF Image Size - Maximum Size 2Mb Image Ratio - 1: 1":    "Image Format - JPG, Pong, ZPEG, GIF Image Size - Maximum Size 2Mb Image Ratio - 1: 1",
   "Order ID": "Order ID",
   "Order Amount": "Order Amount",
   "Track Order": "Track Order",
@@ -314,8 +288,7 @@ export const english = {
   "Features Catagories": "Features Catagories",
   Food: "Food",
   Campaigns: "Campaigns",
-  "We provide best quality & fresh grocery items near your location":
-    "We provide best quality & fresh grocery items near your location",
+  "We provide best quality & fresh grocery items near your location":    "We provide best quality & fresh grocery items near your location",
   "Best Reviewed Foods": "Best Reviewed Foods",
   "Special Offer": "Special Offer",
   "Most Popular Items": "Most Popular Items",
@@ -346,8 +319,7 @@ export const english = {
   food: "food",
   This: "This",
   "Available Form": "Available Form",
-  "is not available right now. You can order it later.":
-    "is not available right now. You can order it later.",
+  "is not available right now. You can order it later.":    "is not available right now. You can order it later.",
   Description: "Description",
   "is not available right now.": "is not available right now.",
   "Add to Cart": "Add to Cart",
@@ -361,7 +333,6 @@ export const english = {
   "Minimum Order Value": "Minimum Order Value",
   "Delivery Time": "Delivery Time",
   Ratings: "Ratings",
-
   Rating: "Rating",
   Offer: "Offer",
   "Expired on": "Expired on",
@@ -376,7 +347,6 @@ export const english = {
   Copied: "Code copied!",
   "Active Order": "Active Order",
   "Past Order": "Past Order",
-
   "Resturant Informations": "Resturant Informations",
   "Payment Status": "Payment Status",
   "Order Status": "Order Status",
@@ -409,8 +379,7 @@ export const english = {
   all: "all",
   "Active orders": "Active orders",
   "Past orders": "Past orders",
-  " I agree that placing the order places me under Terms and Conditions & Privacy Policies":
-    " I agree that placing the order places me under Terms and Conditions & Privacy Policies",
+  " I agree that placing the order places me under Terms and Conditions & Privacy Policies":    " I agree that placing the order places me under Terms and Conditions & Privacy Policies",
   "Have a Coupon?": "Have a Coupon?",
   "Apply Now": "Apply Now",
   "View Saved Address": "View Saved Address",
@@ -420,7 +389,6 @@ export const english = {
   " Add New +": " Add New +",
   "Address Type": "Address Type",
   "Newly Joined": "Newly Joined",
-
   New: "New",
   home: "Home",
   Office: "Office",
@@ -438,8 +406,7 @@ export const english = {
   "Fast Home Delivery": "Fast Home Delivery",
   "DISCOUNT UPTO 20%": "DISCOUNT UPTO 20%",
   "for Chinese, Japanies & Asian foods": "for Chinese, Japanese & Asian foods",
-  "Download our app from google play store & app store.":
-    "Download our app from google play store & app store.",
+  "Download our app from google play store & app store.":    "Download our app from google play store & app store.",
   "I agree with the terms & conditions": "I agree with the terms & conditions",
   "Item added to cart": "Item added to cart",
   "You are not logged in": "You are not logged in",
@@ -466,29 +433,25 @@ export const english = {
   items: "items",
   "Coupon Applied": "Coupon Applied",
   Paid: "Paid",
-
   Unpaid: "Unpaid",
   "Order Summery": "Order Summery",
   "Your food will be delivered within": "Your food will be delivered within",
   "Back to home": "Back to home",
   "Order Place Failed": "Order Place Failed",
   "Order didn't place successfully.": "Order didn't place successfully.",
-  "Are you sure you want to cancel this order?":
-    "Are you sure you want to cancel this order?",
+  "Are you sure you want to cancel this order?":    "Are you sure you want to cancel this order?",
   "Delivery man doesnt assigned": "Delivery man doesnt assigned",
   "Delivery man has not been assigned": "Delivery man has not been assigned",
   "Not Available now": "Not Available now",
   "Available will be": "Available will be",
   "non-veg": "non-veg",
   veg: "veg",
-
   "All Products": "All Products",
   "Positive Review": "Positive Review",
   "Delivering to": "Delivering to",
   Recommended: "Recommended",
   "Switch to cash on delivery": "Switch to cash on delivery",
-  "Are you sure you want to switch this order to Cash On Delivery?":
-    "Are you sure you want to switch this order to Cash On Delivery?",
+  "Are you sure you want to switch this order to Cash On Delivery?":    "Are you sure you want to switch this order to Cash On Delivery?",
   "Payment Failed": "Payment Failed",
   "My Orders": "My Orders",
   inbox: "inbox",
@@ -500,8 +463,7 @@ export const english = {
   wallet: "wallet",
   " Change": " Change",
   "Added to favorite successfully.": "Added to favorite successfully.",
-  "Removed from  favorite successfully.":
-    "Removed from  favorite successfully.",
+  "Removed from  favorite successfully.":    "Removed from  favorite successfully.",
   "Something went wrong.": "Something went wrong.",
   Update: " Update",
   "Coupon Copied": "Coupon Copied",
@@ -522,33 +484,26 @@ export const english = {
   Delivery: "Delivery",
   "take away": "take away",
   "Please search some keywords.": "Please search some keywords.",
-  "Are you sure you want to delete this address?":
-    "Are you sure you want to delete this address?",
+  "Are you sure you want to delete this address?":    "Are you sure you want to delete this address?",
   "No food found": "No food found",
   "No restaurant found": "No restaurant found",
-  "You cannot order from multiple restaurants in a single order":
-    "You cannot order from multiple restaurants in a single order",
-  "You have food from another restaurant in cart. If you continue, your all previous food from cart will be removed":
-    "You have food from another restaurant in cart. If you continue, your all previous food from cart will be removed",
+  "You cannot order from multiple restaurants in a single order":    "You cannot order from multiple restaurants in a single order",
+  "You have food from another restaurant in cart. If you continue, your all previous food from cart will be removed":    "You have food from another restaurant in cart. If you continue, your all previous food from cart will be removed",
   "Are you sure, you want to reset?": "Are you sure, you want to reset?",
   "Please Choose a delivery address.": "Please Choose a delivery address.",
-  "You denied location permission. Please allow browsers location permission from your device, refresh the site and receive more accurate delivery.":
-    "You denied location permission. Please allow browsers location permission from your device, refresh the site and receive more accurate delivery.",
+  "You denied location permission. Please allow browsers location permission from your device, refresh the site and receive more accurate delivery.":    "You denied location permission. Please allow browsers location permission from your device, refresh the site and receive more accurate delivery.",
   Variation: "Variation",
   Addon: "Addon",
   "You place the order successfully.": "You place the order successfully.",
-  "Your order is placed Successfully. We start our delivery process and you will receive your food soon":
-    "Your order is placed Successfully. We start our delivery process and you will receive your food soon",
+  "Your order is placed Successfully. We start our delivery process and you will receive your food soon":    "Your order is placed Successfully. We start our delivery process and you will receive your food soon",
   "Congratulations!": "Congratulations!",
-  "One or more item is not available for the chosen preferable schedule time.":
-    "One or more item is not available for the chosen preferable schedule time.",
+  "One or more item is not available for the chosen preferable schedule time.":    "One or more item is not available for the chosen preferable schedule time.",
   "Download app to enjoy more!": "Download app to enjoy more!",
   "FIND BEST RESTAURANTS NEAR YOU": "FIND BEST RESTAURANTS NEAR YOU",
   "Pick Locations": "Pick Locations",
   "Best Reviewed Food": "Best Reviewed Food",
   "Need Any help?": "Need Any help?",
-  "Communicate with our support team to get proper guidance to your quaternaries.":
-    "Communicate with our support team to get proper guidance to your quaternaries.",
+  "Communicate with our support team to get proper guidance to your quaternaries.":    "Communicate with our support team to get proper guidance to your quaternaries.",
   "VISIT US": "VISIT US",
   "EMAIL US": "EMAIL US",
   "CALL US": "CALL US",
@@ -580,8 +535,7 @@ export const english = {
   "Open Your Own Virtual Restaurant On": "Open Your Own Virtual Restaurant On",
   "Join as delivery man on": "Join as delivery man on",
   "Lets Connect !": "Lets Connect !",
-  "Stay upto date with restaurants and foods around you":
-    "Stay upto date with restaurants and foods around you",
+  "Stay upto date with restaurants and foods around you":    "Stay upto date with restaurants and foods around you",
   "Best Restaurants Near Your Location": "Best Restaurants Near Your Location",
   "Light Mode": "Light Mode",
   "Dark Mode": "Dark Mode",
@@ -589,7 +543,6 @@ export const english = {
   "All Restaurants": "All Restaurants",
   History: "History",
   Suggestions: "Suggestions",
-
   "Days Since Joining": "Days Since Joining",
   "amount in wallet": "amount in wallet",
   Coupons: "Coupons",
@@ -607,11 +560,9 @@ export const english = {
   "Rate the food": "Rate the food",
   Quantity: "Quantity",
   "Rate the deliveryman": "Rate the deliveryman",
-  "I agree that placing the order places me under Terms and Conditions & Privacy Policies":
-    "I agree that placing the order places me under Terms and Conditions & Privacy Policies",
+  "I agree that placing the order places me under Terms and Conditions & Privacy Policies":    "I agree that placing the order places me under Terms and Conditions & Privacy Policies",
   "Delivery Man Tips": "Delivery Man Tips",
-  "It Will Add To Your Balance When The Order Is Delivered":
-    "It Will Add To Your Balance When The Order Is Delivered",
+  "It Will Add To Your Balance When The Order Is Delivered":    "It Will Add To Your Balance When The Order Is Delivered",
   "You Have Earned Point": "You Have Earned Point",
   "Enjoy Off On All Foods": "Enjoy Off On All Foods",
   "Discount Available From": "Discount Available From",
@@ -622,15 +573,13 @@ export const english = {
   "Currently Available Items": "Currently Available Items",
   "Discounted Items": "Discounted Items",
   "Clear All Filter": "Clear All Filter",
-  "Give a valid phone number to continue sign-in":
-    "Give a valid phone number to continue sign-in",
+  "Give a valid phone number to continue sign-in":    "Give a valid phone number to continue sign-in",
   "ascending (A-Z)": "ascending (A-Z)",
   "descending (Z-A)": "descending (Z-A)",
   "Are You Sure You Want To Delete ?": "Are You Sure You Want To Delete ?",
   "Are You Sure You Want To Logout?": "Are You Sure You Want To Logout?",
   "Only for  Restaurant": "Only for  Restaurant",
-  "Connect with our social media and other sites to keep up to date":
-    "Connect with our social media and other sites to keep up to date",
+  "Connect with our social media and other sites to keep up to date":    "Connect with our social media and other sites to keep up to date",
   "% off": "% off",
   Register: "Register",
   "Use Current Location": "Use Current Location",
@@ -641,8 +590,7 @@ export const english = {
   "Add New +": "Add New +",
   "Add new address": "Add new address",
   "Convert to currency now": "Convert to currency now",
-  "Your loyalty point will convert to currency and transfer to wallet":
-    "Your loyalty point will convert to currency and transfer to wallet",
+  "Your loyalty point will convert to currency and transfer to wallet":    "Your loyalty point will convert to currency and transfer to wallet",
   point: "point",
   "Your Profile": "Your Profile",
   "No Coupon Found": "No Coupon Found",
@@ -658,19 +606,16 @@ export const english = {
   OFF: "OFF",
   "Days since Joining": "Days since Joining",
   "Amount in Wallet": "Amount in Wallet",
-
   "Delivery fee": "Delivery fee",
   "You have earned": "You have earned",
   "Minimum purchase value": "Minimum purchase value",
   "Max Discount": "Max Discount",
-
   "Cart is Empty": "Cart is Empty",
   "in your cart": "in your cart",
   min: "min",
   "Clear All": "Clear All",
   "Total Price": "Total Price",
-  "Wallet balance is below total amount":
-    "Wallet balance is below total amount",
+  "Wallet balance is below total amount":    "Wallet balance is below total amount",
   "Selected Address": "Selected Address",
   "Enter Your Coupon..": "Enter Your Coupon..",
   "Order Summary": "Order Summary",
@@ -683,21 +628,14 @@ export const english = {
   "Food is on the way": "Food is on the way",
   Delivered: "Delivered",
   "Give Review": "Give Review",
-  "Are you sure you want to  delete this item?":
-    "Are you sure you want to  delete this item?",
-  "Select And Start meaningful conversations!":
-    "Select And Start meaningful conversations!",
+  "Are you sure you want to  delete this item?":    "Are you sure you want to  delete this item?",
+  "Select And Start meaningful conversations!":    "Select And Start meaningful conversations!",
   "Leave a message": "Leave a message",
-  "Your order is placed Successfully. We start our delivery process and you will receive your food soon.":
-    "Your order is placed Successfully. We start our delivery process and you will receive your food soon.",
+  "Your order is placed Successfully. We start our delivery process and you will receive your food soon.":    "Your order is placed Successfully. We start our delivery process and you will receive your food soon.",
   "point.": "point.",
-  "It will add to your balance when the order is delivered.":
-    "It will add to your balance when the order is delivered.",
-
-  "You must be login to access this page.":
-    "You must be login to access this page.",
-  "You must pick a zone to access this page.":
-    "You must pick a zone to access this page.",
+  "It will add to your balance when the order is delivered.":    "It will add to your balance when the order is delivered.",
+  "You must be login to access this page.":    "You must be login to access this page.",
+  "You must pick a zone to access this page.":    "You must pick a zone to access this page.",
   "Your Email Address": "Your Email Address",
   Join: "Join",
   "Please insert a valid email.": "Please insert a valid email.",
@@ -712,13 +650,11 @@ export const english = {
   "Become a restaurant owner": "Become a restaurant owner",
   "Become a delivery man": "Become a delivery man",
   "Help & Support": "Help & Support",
-  "Open your own  virtual restaurant on":
-    "Open your own  virtual restaurant on",
+  "Open your own  virtual restaurant on":    "Open your own  virtual restaurant on",
   "Are you sure you want to  logout?": "Are you sure you want to  logout?",
   "Clear Cart": "Clear Cart",
   "Order Now": "Order Now",
-  "To select from saved addresses, you need to sign in.":
-    "To select from saved addresses, you need to sign in.",
+  "To select from saved addresses, you need to sign in.":    "To select from saved addresses, you need to sign in.",
   "Location is required.": "Location is required.",
   Agree: "Agree",
   Okay: "Okay",
@@ -745,8 +681,7 @@ export const english = {
   FreeLancer: "FreeLancer",
   Salary: "Salary",
   "Signup successfully.": "Signup successfully.",
-  "Please enter your register Mobile Number":
-    "Please enter your register Mobile Number",
+  "Please enter your register Mobile Number":    "Please enter your register Mobile Number",
   Done: "Done",
   "field is empty": "field is empty",
   Verify: "Verify",
@@ -765,23 +700,20 @@ export const english = {
   confirmed: "confirmed",
   canceled: "canceled",
   cash_on_delivery: "cash_on_delivery",
-  delivered: "delivered",
-  // "away":"away"
+  delivered: "delivered", 
   Comment: "Comment",
   "You have no channels.": "You have no channels.",
   admin: "admin",
   "delivery man": "delivery man",
   vendor: "vendor",
   "Delete My Account": "Delete My Account",
-  "Are you sure you want to delete your account?":
-    "Are you sure you want to delete your account?",
+  "Are you sure you want to delete your account?":    "Are you sure you want to delete your account?",
   "Refund Request": "Refund Request",
   "Select an option": "Select an option",
   "Submit Refund Request": "Submit Refund Request",
   Note: "Note",
   "Please select a reason": "Please select a reason",
-  "Maximum 3 images can be send at a time.":
-    "Maximum 3 images can be send at a time.",
+  "Maximum 3 images can be send at a time.":    "Maximum 3 images can be send at a time.",
   "Attach photo": "Attach photo",
   "No saved addresses found to select.": "No saved addresses found to select.",
   "Deliveryman Registration": "Deliveryman Registration",
@@ -800,13 +732,10 @@ export const english = {
   "Refund Policy": "Refund Policy",
   "Shipping Policy": "Shipping Policy",
   "Cancellation Policy": "Cancellation Policy",
-  "This Variation needs to be selected in between minimum":
-    "This Variation needs to be selected in between minimum",
+  "This Variation needs to be selected in between minimum":    "This Variation needs to be selected in between minimum",
   "and maximum": "and maximum",
   "items.": "items.",
-  "Enter the verification code (OTP) sent to":
-    "Enter the verification code (OTP) sent to",
-
+  "Enter the verification code (OTP) sent to":    "Enter the verification code (OTP) sent to",
   "Selected variation named": "Selected variation named",
   "must be in between Minimum": "must be in between Minimum",
   "and Maximum": "and Maximum",
@@ -814,10 +743,8 @@ export const english = {
   "Social Register": "Social Register",
   "Social Login": "Social Login",
   "Continue with facebook": "Continue with facebook",
-  "Password can not be updated while you are logged in by using social logins.":
-    "Password can not be updated while you are logged in by using social logins.",
-  "Previously added restaurant foods have been removed from cart. Now, try again.":
-    "Previously added restaurant foods have been removed from cart. Now, try again.",
+  "Password can not be updated while you are logged in by using social logins.":    "Password can not be updated while you are logged in by using social logins.",
+  "Previously added restaurant foods have been removed from cart. Now, try again.":    "Previously added restaurant foods have been removed from cart. Now, try again.",
   "Order placement failed": "Order placement failed",
   "Order placed successfully.": "Order placed successfully.",
   referral: "referral",
@@ -830,8 +757,7 @@ export const english = {
   "referral code": "referral code",
   "Referral code Copied": "Referral code Copied",
   "Search suggestions are loading...": "Search suggestions are loading...",
-  "Your token has been expired.please sign in again":
-    "Your token has been expired.please sign in again",
+  "Your token has been expired.please sign in again":    "Your token has been expired.please sign in again",
   "New On": "New On",
   "Deliveryman tips": "Deliveryman tips",
   "something went wrong.": "something went wrong.",
@@ -843,11 +769,9 @@ export const english = {
   office: "office",
   refund_requested: "refund_requested",
   popular_stores: "popular_stores",
-
   RecommendProduct: "RecommendProduct",
   "Cancel Reason": "Cancel Reason",
-  "You can not Order more then 1000৳ on COD order":
-    "You can not Order more then 1000৳ on COD order",
+  "You can not Order more then 1000৳ on COD order":    "You can not Order more then 1000৳ on COD order",
   WishList: "WishList",
   processing: "processing",
   refunded: "refunded",
@@ -856,49 +780,36 @@ export const english = {
   handover: "handover",
   "Explore Now": "Explore Now",
   "Start Exploring!": "Start Exploring!",
-  "Select location first to start exploring shops & restaurants near you":
-    "Select location first to start exploring shops & restaurants near you",
+  "Select location first to start exploring shops & restaurants near you":    "Select location first to start exploring shops & restaurants near you",
   Cart: "Cart",
   Store: "Store",
   We: "We",
   satisfied: "satisfied",
   "some Customer & Restaurant Owners": "some Customer & Restaurant Owners",
   "Become A Seller": "Become A Seller",
-  "Register as seller and open shop in 6amMart to start your business":
-    "Register as seller and open shop in 6amMart to start your business",
+  "Register as seller and open shop in 6amMart to start your business":    "Register as seller and open shop in 6amMart to start your business",
   "Become A Deliveryman": "Become A Deliveryman",
   "to start your business": "to start your business",
   "Register as seller and open shop in": "Register as seller and open shop in",
-  "Register as delivery man and earn money":
-    "Register as delivery man and earn money",
-  "Lorem ipsum dolor sit amet, consectetur adipiscing elit.":
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+  "Register as delivery man and earn money":    "Register as delivery man and earn money",
+  "Lorem ipsum dolor sit amet, consectetur adipiscing elit.":    "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   "Let’s Start Earning with": "Let’s Start Earning with",
   "Campaign Schedule :": "Campaign Schedule :",
   "Daily time: ": "Daily time: ",
   "Popular Items Nearby": "Popular Items Nearby",
   "Running Campaigns": "Running Campaigns",
-  "A store must be selected to continue":
-    "A store must be selected to continue",
-  "A module must be selected to continue.":
-    "A module must be selected to continue.",
-  "Please enter your registered mobile number":
-    "Please enter your registered mobile number",
-  "The total amount of the order, exceeds maximum amount of the cash on delivery method":
-    "The total amount of the order, exceeds maximum amount of the cash on delivery method",
-  "Select a type of module for your orders":
-    "Select a type of module for your orders",
-  "You have item from another store in cart. If you continue, your all previous item from cart will be removed and this one will be added.":
-    "You have item from another store in cart. If you continue, your all previous item from cart will be removed and this one will be added.",
-  "More products need to apply the coupon":
-    "More products need to apply the coupon",
+  "A store must be selected to continue":    "A store must be selected to continue",
+  "A module must be selected to continue.":    "A module must be selected to continue.",
+  "Please enter your registered mobile number":    "Please enter your registered mobile number",
+  "The total amount of the order, exceeds maximum amount of the cash on delivery method":    "The total amount of the order, exceeds maximum amount of the cash on delivery method",
+  "Select a type of module for your orders":    "Select a type of module for your orders",
+  "You have item from another store in cart. If you continue, your all previous item from cart will be removed and this one will be added.":    "You have item from another store in cart. If you continue, your all previous item from cart will be removed and this one will be added.",
+  "More products need to apply the coupon":    "More products need to apply the coupon",
   "Terms And Conditions": "Terms And Conditions",
   "About us": "About us",
   "Cancellation policy": "Cancellation policy",
-  "To apply this coupon, total order amount should be minimum":
-    "To apply this coupon, total order amount should be minimum",
-  "Point to wallet transfer successfully.":
-    "Point to wallet transfer successfully.",
+  "To apply this coupon, total order amount should be minimum":    "To apply this coupon, total order amount should be minimum",
+  "Point to wallet transfer successfully.":    "Point to wallet transfer successfully.",
   "Item Price": "Item Price",
   "Vat/Tax (Included)": "Vat/Tax (Included)",
   Clear: "Clear",
@@ -907,13 +818,10 @@ export const english = {
   "This variation is out of stock": "This variation is out of stock",
   "Free delivery": "Free delivery",
   "Store is closed. Try again later.": "Store is closed. Try again later.",
-  "Restaurant is closed. Try again later.":
-    "Restaurant is closed. Try again later.",
-  "I agree that placing the order places me under":
-    "I agree that placing the order places me under",
+  "Restaurant is closed. Try again later.":    "Restaurant is closed. Try again later.",
+  "I agree that placing the order places me under":    "I agree that placing the order places me under",
   "Terms and Conditions": "Terms and Conditions",
-  "Subscribe to our weekly newsletter and be a part of our journey to self discovery and love.":
-    "Subscribe to our weekly newsletter and be a part of our journey to self discovery and love.",
+  "Subscribe to our weekly newsletter and be a part of our journey to self discovery and love.":    "Subscribe to our weekly newsletter and be a part of our journey to self discovery and love.",
   "Join Us!": "Join Us!",
   "Recent Searches": "Recent Searches",
   "Quick View": "Quick View",
@@ -923,13 +831,11 @@ export const english = {
   "Just For You": "Just For You",
   "Shop Now": "Shop Now",
   "Item That You’ll Love": "Item That You’ll Love",
-  "Join our online marketplace revolution and boost your income.":
-    "Join our online marketplace revolution and boost your income.",
+  "Join our online marketplace revolution and boost your income.":    "Join our online marketplace revolution and boost your income.",
   "Loading...": "Loading...",
   "Language has been changed": "Language has been changed",
   "No module found": "No module found",
-  "Contact with the site owner to activate modules.":
-    "Contact with the site owner to activate modules.",
+  "Contact with the site owner to activate modules.":    "Contact with the site owner to activate modules.",
   "Google Play": "Google Play",
   "App Store": "App Store",
   "Seller App": "Seller App",
@@ -941,9 +847,7 @@ export const english = {
   "What’s Wrong With This Order?": "What’s Wrong With This Order?",
   "Getting Order List...": "Getting Order List...",
   "Add Cutlery": "Add Cutlery",
-
-  "Dont have a cutlery? Restaurant will provide you.":
-    "Dont have a cutlery? Restaurant will provide you.",
+  "Dont have a cutlery? Restaurant will provide you.":    "Dont have a cutlery? Restaurant will provide you.",
   "If Any product is not available": "If Any product is not available",
   "Remove it form my cart": "Remove it form my cart",
   "I will wait until it is restocked": "I will wait until it is restocked",
@@ -963,8 +867,7 @@ export const english = {
   "Unavailable item note": "Unavailable item note",
   Deny: "Deny",
   Accept: "Accept",
-  "Without any payment method, you can not place the order.":
-    "Without any payment method, you can not place the order.",
+  "Without any payment method, you can not place the order.":    "Without any payment method, you can not place the order.",
   Subscribe: "Subscribe",
   "Nothing found": "Nothing found",
   Unit: "Unit",
@@ -974,10 +877,8 @@ export const english = {
   "Cancellation Reason": "Cancellation Reason",
   "Locate me": "Locate me",
   Explore: "Explore",
-  "Are you sure to change the language?":
-    "Are you sure to change the language?",
-  "The browser will refresh to get translated content.":
-    "The browser will refresh to get translated content.",
+  "Are you sure to change the language?":    "Are you sure to change the language?",
+  "The browser will refresh to get translated content.":    "The browser will refresh to get translated content.",
   No: "No",
   "We are under maintenance.": "We are under maintenance.",
   "added via": "added via",
@@ -990,40 +891,31 @@ export const english = {
   bonus: "bonus",
   "1k+ km": "1k+ km",
   km: "km",
-  "Upload your prescriptions here and get your medicine right at your door step":
-    "Upload your prescriptions here and get your medicine right at your door step",
+  "Upload your prescriptions here and get your medicine right at your door step":    "Upload your prescriptions here and get your medicine right at your door step",
   "Upload Prescriptions": "Upload Prescriptions",
-  "Need to order same medicine? don’t worry just click here":
-    "Need to order same medicine? don’t worry just click here",
+  "Need to order same medicine? don’t worry just click here":    "Need to order same medicine? don’t worry just click here",
   "Refill Request": "Refill Request",
   "Visit Again!": "Visit Again!",
-  "Get your recent medicine from the store you recently visited":
-    "Get your recent medicine from the store you recently visited",
-  "Get your recent purchase from the shop you recently visited":
-    "Get your recent purchase from the shop you recently visited",
+  "Get your recent medicine from the store you recently visited":    "Get your recent medicine from the store you recently visited",
+  "Get your recent purchase from the shop you recently visited":    "Get your recent purchase from the shop you recently visited",
   "Complete Multipurpose": "Complete Multipurpose",
   eBusiness: "eBusiness",
   Solution: "Solution",
-  "6amMart is a Laravel and Flutter Framework-based multi-vendor food, grocery, eCommerce, parcel, and pharmacy delivery system. It has six modules to cover all your business functionality.":
-    "6amMart is a Laravel and Flutter Framework-based multi-vendor food, grocery, eCommerce, parcel, and pharmacy delivery system. It has six modules to cover all your business functionality.",
+  "6amMart is a Laravel and Flutter Framework-based multi-vendor food, grocery, eCommerce, parcel, and pharmacy delivery system. It has six modules to cover all your business functionality.":    "6amMart is a Laravel and Flutter Framework-based multi-vendor food, grocery, eCommerce, parcel, and pharmacy delivery system. It has six modules to cover all your business functionality.",
   "Featured Store": "Featured Store",
   "Close fullscreen": "Close fullscreen",
   Fullscreen: "Fullscreen",
   "CLOSED NOW": "CLOSED NOW",
-  "Get Your Desired High Quality Products Here":
-    "Get Your Desired High Quality Products Here",
+  "Get Your Desired High Quality Products Here":    "Get Your Desired High Quality Products Here",
   "Explore Items": "Explore Items",
   "Most Popular Products": "Most Popular Products",
-  "We provide best quality & valuable products around the world":
-    "We provide best quality & valuable products around the world",
+  "We provide best quality & valuable products around the world":    "We provide best quality & valuable products around the world",
   "Popular Store": "Popular Store",
   "Search foods and restaurants...": "Search foods and restaurants...",
   "Wanna Try  Again!": "Wanna Try  Again!",
-  "Get your recent food from the restaurant you recently visited":
-    "Get your recent food from the restaurant you recently visited",
+  "Get your recent food from the restaurant you recently visited":    "Get your recent food from the restaurant you recently visited",
   "Special Food Offers": "Special Food Offers",
-  "Sorry no data found related to your search":
-    "Sorry no data found related to your search",
+  "Sorry no data found related to your search":    "Sorry no data found related to your search",
   "Items not found!": "Items not found!",
   "Stores not found!": "Stores not found!",
   "More From This Store!": "More From This Store!",
@@ -1032,11 +924,9 @@ export const english = {
   "Detailed Reviews": "Detailed Reviews",
   "Add fund": "Add fund",
   "Faster & secure way to pay bill": "Faster & secure way to pay bill",
-  "Add fund by from secured digital payment gateways":
-    "Add fund by from secured digital payment gateways",
+  "Add fund by from secured digital payment gateways":    "Add fund by from secured digital payment gateways",
   "Add Fund to Wallet": "Add Fund to Wallet",
-  "If you want to add fund to your wallet then click add fund button":
-    "If you want to add fund to your wallet then click add fund button",
+  "If you want to add fund to your wallet then click add fund button":    "If you want to add fund to your wallet then click add fund button",
   "Applied filters:": "Applied filters:",
   "The service": "The service",
   "you can rely on.": "you can rely on.",

@@ -25,9 +25,9 @@ const NotAvailableCard = ({ endTime, startTime }) => {
           </Typography>
 
           <Typography>{t("Available Form")}</Typography>
-          <Typography>{`${moment(startTime).format(
+          <Typography>{`${moment(startTime, ["HH:mm"]).format(
             "hh:mm a"
-          )} - ${moment(endTime).format("hh:mm a")}`}</Typography>
+          )} - ${moment(endTime, ["HH:mm"]).format("hh:mm a")}`}</Typography>
         </Stack>
       </Box>
     </Box>

@@ -58,8 +58,8 @@ const CampaignCard = ({ data }) => {
               variant="h6"
               color={theme.palette.primary.main}
             >
-              {moment(data?.start_time, ["HH:mm"]).format("hh:mm a")} -{" "}
-              {moment(data?.end_time, ["HH:mm"]).format("hh:mm a")}
+              {moment(data?.start_time).format("hh:mm a")} -{" "}
+              {moment(data?.end_time).format("hh:mm a")}
             </Typography>
           </Typography>
         </CustomStackFullWidth>

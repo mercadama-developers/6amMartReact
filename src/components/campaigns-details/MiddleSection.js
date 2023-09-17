@@ -52,7 +52,7 @@ const MiddleSection = ({ campaignsDetails, image }) => {
                 variant="h6"
                 color={theme.palette.primary.main}
             >
-              {moment(campaignsDetails?.start_time, ["HH:mm"]).format("hh:mm a")} - {moment(campaignsDetails?.end_time, ["HH:mm"]).format("hh:mm a")}
+              {moment(campaignsDetails?.start_time).format("hh:mm a")} - {moment(campaignsDetails?.end_time).format("hh:mm a")}
             </Typography> : <Skeleton variant='text' width='100px' />
           }
 

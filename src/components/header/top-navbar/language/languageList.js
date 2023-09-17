@@ -2,6 +2,7 @@ import usFlag from "./assets/us.svg";
 import arabicFlag from "./assets/arabic-flag-svg.svg";
 import spain from "./assets/spain.png";
 import bangladesh from "./assets/bangladesh.png";
+import brazil from "./assets/brazil.png";
 export const languageList = [
   {
     languageName: "English",
@@ -26,5 +27,11 @@ export const languageList = [
     languageCode: "bn",
     countryCode: "BN",
     countryFlag: bangladesh.src,
+  },
+  {
+    languageName: "Brazil",
+    languageCode: "br",
+    countryCode: "BR",
+    countryFlag: brazil.src,
   },
 ];

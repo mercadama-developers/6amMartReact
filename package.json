@@ -3,8 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
+    "dev": "env-cmd -f .env.development next dev",
+    "build-development": "env-cmd -f .env.development next build",
+    "build-staging": "env-cmd -f .env.staging next build",
+    "build-production": "env-cmd -f .env.production next build",
     "start": "next start",
     "lint": "next lint"
   },

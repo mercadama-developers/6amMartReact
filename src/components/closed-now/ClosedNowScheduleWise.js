@@ -9,8 +9,6 @@ const ClosedNowScheduleWise = (props) => {
   if (active) {
     if (schedules.length > 0) {
       const todayInNumber = moment().weekday();
-      console.log("moment 0011", todayInNumber)
-      
       let isOpen = false;
       let filteredSchedules = schedules.filter(
         (item) => item.day === todayInNumber

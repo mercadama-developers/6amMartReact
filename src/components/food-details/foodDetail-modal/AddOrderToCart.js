@@ -165,10 +165,7 @@ const AddOrderToCart = (props) => {
                   ]).format("hh:mm a")} - ${moment(
                     product.available_time_ends,
                     ["HH:mm"]
-                  ).format("hh:mm a")}`}
-                  {console.log("moment 0020", product.available_time_starts)}
-                  {console.log("moment 0021", product.available_time_ends)}
-                  </Typography>
+                  ).format("hh:mm a")}`}</Typography>
                 </Stack>
               </Stack>
             </Grid>

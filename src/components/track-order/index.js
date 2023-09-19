@@ -202,7 +202,6 @@ const TrackOrder = ({ configData, trackOrderData }) => {
                   {labels?.time && (
                     <Typography mt="10px" variant="body2" textAlign="center">
                       {moment(labels?.time).format("ddd, Do MMM")}
-                      {console.log("moment 0028", labels?.time)}
                     </Typography>
                   )}
                 </Stack>
@@ -236,7 +235,6 @@ const TrackOrder = ({ configData, trackOrderData }) => {
               {labels?.time && (
                 <Typography mt="10px" variant="body2" textAlign="center">
                   {moment(labels?.time).format("ddd, Do MMM")}
-                  {console.log("moment 0029", labels?.time)}
                 </Typography>
               )}
             </Step>

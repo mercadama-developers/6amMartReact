@@ -2,7 +2,6 @@ import moment from "moment";
 
 function getCurrentTime() {
   const currentTime = moment().format("HH:mm");
-  {console.log("moment 0010", currentTime)}
   return currentTime;
 }
 

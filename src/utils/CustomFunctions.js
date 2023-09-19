@@ -19,8 +19,11 @@ export const getNumberWithConvertedDecimalPoint = (
 };
 export const isAvailable = (start, end) => {
   const startTime = moment(start, "HH:mm:ss");
+  console.log("moment 0031", start);
   const endTime = moment(end, "HH:mm:ss");
+  console.log("moment 0032", end);
   let currentTime = moment();
+  console.log("moment 0033", currentTime);
   return moment(currentTime).isBetween(startTime, endTime);
 };
 export const handleTotalAmountWithAddons = (
@@ -60,10 +63,12 @@ export const calculateItemBasePrice = (item, selectedOptions) => {
 };
 export const FormatedDateWithTime = (date) => {
   let dateString = moment(date).format("YYYY-MM-DD hh:mm a");
+  console.log("moment 0034", date);
   return dateString;
 };
 export const onlyTimeFormat = (date) => {
   let timeString = moment(date, "YYYY-MM-DD hh:mm a").format("hh:mm");
+  console.log("moment 0035", date);
   return timeString;
 };
 
@@ -394,6 +399,9 @@ export const getProductDiscount = (items, storeData) => {
       `${endDate} ${endTime}`,
       "YYYY-MM-DD HH:mm:ss"
     ).format();
+    console.log("moment 0036", endDate);
+    console.log("moment 0037", endTime);
+    console.log("moment 0038", combinedEndDateTime);
     let currentDateTime = moment().format();
     if (combinedEndDateTime > currentDateTime) {
       //shop wise discount
@@ -478,6 +486,11 @@ export const currentTime = moment(currentDate).format("HH:mm");
 
 function recursive(start, end, close, list, schedule_order_slot_duration, day) {
   const checkedEnd = moment(end, "HH:mm").subtract(1, "minutes");
+  console.log("moment 0039", end);
+  console.log("moment 0040", currentDate);
+  console.log("moment 0041", close);
+  console.log("moment 0042", start);
+  console.log("moment 0043", checkedEnd);
   const date =
     getDayNumber(today) === day
       ? moment(currentDate).format("yyyy-MM-DD")
@@ -537,6 +550,9 @@ export const getAllSchedule = (
   let list = [];
   if (schedules && schedules.length > 0) {
     const days = schedules.filter((s) => s.day === day);
+
+    console.log("moment 0044", days[index].closing_time);
+    console.log("moment 0045", start);
     for (let index = 0; index < days.length; index++) {
       let close = moment(days[index].closing_time, "HH:mm");
       let start = moment(days[index].opening_time, "HH:mm");
@@ -887,6 +903,8 @@ export const isFoodAvailableBySchedule = (cart, selectedTime) => {
     let currentTime = moment();
     if (cart.length > 0) {
       let isAvailable = cart.every((item) => {
+        console.log("moment 0046", item.available_time_starts);
+        console.log("moment 0047", item.available_time_ends);
         const startTime = moment(item.available_time_starts, "HH:mm:ss");
         const endTime = moment(item.available_time_ends, "HH:mm:ss");
         return moment(currentTime).isBetween(startTime, endTime);
@@ -898,6 +916,8 @@ export const isFoodAvailableBySchedule = (cart, selectedTime) => {
       const slug = selectedTime.split(" ").pop();
       if (cart.length > 0) {
         const isAvailable = cart.every((item) => {
+          console.log("moment 0048", item.available_time_starts);
+          console.log("moment 0049", item.available_time_ends);
           const startTime = moment(item.available_time_starts, "HH:mm:ss");
           const endTime = moment(item.available_time_ends, "HH:mm:ss");
           const currentTime = moment(selectedTime, "HH:mm:ss");

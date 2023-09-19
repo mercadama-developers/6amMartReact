@@ -7,8 +7,10 @@ const CustomFormatedDateTime = ({ date }) => {
   let timeFormat = configData?.timeformat;
 
   if (timeFormat === "12") {
+    console.log("moment 0014", date);
     return moment(date).format("ll hh:mm a");
   } else {
+    console.log("moment 0015", date);
     return moment(date).format("ll HH:mm");
   }
 };

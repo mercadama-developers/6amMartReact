@@ -186,7 +186,9 @@ const Coupon = (props) => {
           />
           <Typography fontSize={{ xs: "10px", md: "12px" }} fontWeight="500">
             {moment(coupon?.start_date)?.format("DD MMM, YYYY")} {t("to")}{" "}
+            {console.log("moment 0012", coupon?.start_date)}
             {moment(coupon?.end_date)?.format("DD MMM, YYYY")}
+            {console.log("moment 0013", coupon?.end_date)}
           </Typography>
           {/*<Typography fontSize={{ xs: "8px", md: "10px" }}>*/}
           {/*  Available from 8:30 AM - 4:30 PM{" "}*/}

@@ -38,10 +38,12 @@ const MiddleSection = ({ campaignsDetails, image }) => {
             {moment(campaignsDetails?.available_date_starts).format(
               "MMMM Do YYYY"
             )}
+              {console.log("moment 0005", campaignsDetails?.available_date_starts)}
             -
             {moment(campaignsDetails?.available_date_ends).format(
               "MMMM Do YYYY"
-            )}
+              )}
+              {console.log("moment 0006", campaignsDetails?.available_date_ends)}
           </Typography>
         </Stack>
         <Stack direction="row" spacing={1}>
@@ -53,6 +55,9 @@ const MiddleSection = ({ campaignsDetails, image }) => {
                 color={theme.palette.primary.main}
             >
               {moment(campaignsDetails?.start_time, ["HH:mm"]).format("hh:mm a")} - {moment(campaignsDetails?.end_time, ["HH:mm"]).format("hh:mm a")}
+              {console.log("moment 0007", campaignsDetails?.start_time)}
+              {console.log("moment 0008", campaignsDetails?.end_time)}
+              
             </Typography> : <Skeleton variant='text' width='100px' />
           }
 

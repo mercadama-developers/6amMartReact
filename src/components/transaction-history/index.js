@@ -222,6 +222,7 @@ const TransactionHistory = (props) => {
                       </CustomTableCell>
                       <CustomTableCell>
                         {moment(item?.created_at).format("D MMMM h:mm A")}
+                        {console.log("moment 0030", item?.created_at)}
                       </CustomTableCell>
                     </TableRow>
                   );

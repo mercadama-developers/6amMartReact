@@ -56,6 +56,7 @@ const ParcelTrackOderStepper = ({ steps, activeStep }) => {
               </Typography>
               <Typography fontSize="12px">
                 {step?.time && moment(step?.time).format("D MMM, h:mm A")}
+                {console.log("moment 0027", step?.time)}
               </Typography>
             </Stack>
           </StepLabel>

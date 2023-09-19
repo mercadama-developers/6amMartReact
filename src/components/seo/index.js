@@ -34,9 +34,9 @@ const SEO = ({ title, description, keywords, image, businessName }) => {
       {image && <meta name="twitter:image" content={image} />}
 
       {/* Google specific meta tags */}
-      <meta itemprop="name" content={title || siteName} />
-      <meta itemprop="description" content={description} />
-      {image && <meta itemprop="image" content={image} />}
+      <meta itemProp="name" content={title || siteName} />
+      <meta itemProp="description" content={description} />
+      {image && <meta itemProp="image" content={image} />}
 
       <link rel="canonical" href={url} />
     </Head>

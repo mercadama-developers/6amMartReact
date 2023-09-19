@@ -121,7 +121,6 @@ const ScheduleDelivery = ({ customDispatch, scheduleTime, setDayNumber }) => {
     }
   };
   const handleDateChange = (newValue) => {
-    {console.log("moment 0009", newValue?.$d)}
     const dayName = moment(newValue?.$d).format("dddd");
     const selectedDayNumber = getDayNumber(dayName);
     setDayNumber(selectedDayNumber);

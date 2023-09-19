@@ -45,12 +45,10 @@ const CampaignCard = ({ data }) => {
           <Typography textAlign="left" fontWeight="500" variant="subtitle2">
             {"Start Date"}:{"  "}
             {moment(data?.available_date_starts).format("MMMM Do YYYY")}
-            {console.log("moment 0001",data?.available_date_starts )}
           </Typography>
           <Typography textAlign="left" fontWeight="500" variant="subtitle2">
             {"Start Date"}:{"  "}
             {moment(data?.available_date_ends).format("MMMM Do YYYY")}
-            {console.log("moment 0002", data?.available_date_ends)}
           </Typography>
           <Typography variant="subtitle2" textAlign="left">
             {t("Daily time: ")}
@@ -61,9 +59,7 @@ const CampaignCard = ({ data }) => {
               color={theme.palette.primary.main}
             >
               {moment(data?.start_time, ["HH:mm"]).format("hh:mm a")} -{" "}
-              {console.log("moment 0003", data?.start_time)}
               {moment(data?.end_time, ["HH:mm"]).format("hh:mm a")}
-              {console.log("moment 0004", data?.end_time)}
             </Typography>
           </Typography>
         </CustomStackFullWidth>

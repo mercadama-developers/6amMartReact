@@ -130,8 +130,6 @@ const TopDetails = (props) => {
   };
 
   const today = moment(new Date());
-  console.log("moment 0023", new Date());
-  console.log("moment 0024", today);
   const differenceInMinutes = () => {
     const deliveryTime = trackData?.store?.delivery_time;
     const createdAt = trackData?.created_at;
@@ -150,7 +148,6 @@ const TopDetails = (props) => {
     const newDeliveryTimeWithAdditionalMin = moment(newDeliveryTime)
       .add(minTime, "minutes")
       .format();
-    console.log("moment 0025", newDeliveryTime);
     const duration = moment.duration(
       today.diff(newDeliveryTimeWithAdditionalMin)
     );
@@ -233,7 +230,6 @@ const TopDetails = (props) => {
               color={theme.palette.neutral[600]}
             >
               {moment(trackData?.created_at)?.format("DD MMM, YYYY")}
-              {console.log("moment 0026", trackData?.created_at)}
             </Typography>
           </Typography>
 

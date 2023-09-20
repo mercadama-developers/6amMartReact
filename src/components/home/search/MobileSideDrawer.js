@@ -15,7 +15,7 @@ import {
 } from "../../../styled-components/CustomStyles.style";
 import { useTranslation } from "react-i18next";
 import HighToLow from "../../../sort/HighToLow";
-import { filterTypes } from "../stores/Filter";
+import { Filter } from "../stores/Filter";
 import CustomSlider from "../../search/CustomSlider";
 import CustomRatings from "../../search/CustomRatings";
 import SearchFilter from "../../search/search-filter";
@@ -31,7 +31,7 @@ const MobileSideDrawer = (props) => {
     setPageData,
     selectedCategoriesHandler,
   } = props;
-  const [filterData, setFilterData] = useState(filterTypes);
+  const [filterData, setFilterData] = useState(Filter);
   const [minMax, setMinMax] = useState([0, 0]);
   const priceFilterRange = [{ min_price: 0, max_price: 100 }];
   const { t } = useTranslation();

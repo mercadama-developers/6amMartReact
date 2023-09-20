@@ -20,7 +20,7 @@ export const getNumberWithConvertedDecimalPoint = (
 export const isAvailable = (start, end) => {
   const startTime = moment(start, "HH:mm:ss");
   const endTime = moment(end, "HH:mm:ss");
-  let currentTime = moment();
+  let currentTime = moment().format()
   return moment(currentTime).isBetween(startTime, endTime);
 };
 export const handleTotalAmountWithAddons = (
@@ -884,7 +884,7 @@ export const getCalculatedTotal = (
 
 export const isFoodAvailableBySchedule = (cart, selectedTime) => {
   if (selectedTime === "now") {
-    let currentTime = moment();
+    let currentTime = moment().format();
     if (cart.length > 0) {
       let isAvailable = cart.every((item) => {
         const startTime = moment(item.available_time_starts, "HH:mm:ss");

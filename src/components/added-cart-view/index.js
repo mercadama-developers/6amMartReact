@@ -74,19 +74,19 @@ const CardView = (props) => {
           getModuleWiseCartContent()
         )}
         {getCartListModuleWise(cartList).length > 0 &&
-          configData?.free_delivery_over && (
-            <>
-              <FreeDeliveryProgressBar
-                configData={configData}
-                cartList={cartList}
-              />
-              <CartTotalPrice cartList={getCartListModuleWise(cartList)} />
-              <CartActions
-                setSideDrawerOpen={setSideDrawerOpen}
-                cartList={getCartListModuleWise(cartList)}
-              />
-            </>
-          )}
+        configData?.free_delivery_over ? (
+          <>
+            <FreeDeliveryProgressBar
+              configData={configData}
+              cartList={cartList}
+            />
+            <CartTotalPrice cartList={getCartListModuleWise(cartList)} />
+            <CartActions
+              setSideDrawerOpen={setSideDrawerOpen}
+              cartList={getCartListModuleWise(cartList)}
+            />
+          </>
+        ) : null}
       </CustomStackFullWidth>
     </CustomSideDrawer>
   );

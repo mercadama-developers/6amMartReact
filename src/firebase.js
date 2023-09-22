@@ -9,6 +9,7 @@ import {
 const firebaseConfig = {
   apiKey: "AIzaSyCkzabtEFqa78Zu1jn8pa4HKC7Y6pIuY0c",
   authDomain: "mercadama-32ad1.firebaseapp.com",
+  databaseURL: "https://mercadama-32ad1-default-rtdb.firebaseio.com",
   projectId: "mercadama-32ad1",
   storageBucket: "mercadama-32ad1.appspot.com",
   messagingSenderId: "781814545449",
@@ -32,7 +33,7 @@ const messaging = (async () => {
 
 export const fetchToken = async (setTokenFound, setFcmToken) => {
   return getToken(await messaging, {
-    vapidKey: "X5QeH__AflN6Ra6QPDhyUJlQAYOIBO6-8VqGp-mSUPY",
+    vapidKey: "BElAeiWivP8GitJ-0PLkKE0zaRwczQ7af82IGOsm8cJSQobS9Vy6rdv6Yprcheu8LdgK47Qnye_NGwx18sr_1Hw",
   })
     .then((currentToken) => {
       if (currentToken) {

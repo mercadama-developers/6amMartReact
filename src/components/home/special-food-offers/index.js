@@ -19,7 +19,12 @@ import ProductCard from "../../cards/ProductCard";
 import { NextFood, PrevFood } from "../best-reviewed-items/SliderSettings";
 import { getLanguage } from "../../../helper-functions/getLanguage";
 import { RTL } from "../../rtl";
-
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import { Navigation } from "swiper/modules";
+import PrevIcon from "../../icons/PrevIcon";
+import NextIcon from "../../icons/NextIcon";
 const SpecialOfferCardShimmer = () => {
   return (
     <Stack
@@ -189,6 +194,62 @@ const SpecialFoodOffers = ({ title }) => {
             }}
           >
             <>
+              <Swiper
+                modules={[Navigation]}
+                className="mySwiper"
+                spaceBetween={0}
+                navigation={{
+                  nextEl: ".swiper-button-next",
+                  prevEl: ".swiper-button-prev",
+                }}
+                breakpoints={{
+                  0: {
+                    slidesPerView: 2,
+                  },
+          
+                  0: {
+                    slidesPerView: 2,
+                  },
+          
+                  560: {
+                    slidesPerView: 2.5,
+                  },
+          
+                  670: {
+                    slidesPerView: 3,
+                  },
+                  860: {
+                    slidesPerView: 3,
+                  },
+          
+                  1250: {
+                    slidesPerView: 4,
+                  },
+                }}
+              >
+                <div className="swiper-button-prev">
+                  <PrevIcon />
+                </div>
+                <div className="swiper-button-next">
+                  <NextIcon />
+                </div>
+                <SliderCustom nopadding="true">
+                  {data?.products?.map((item, index) => {
+                    return (
+                      <SwiperSlide>
+                        <ProductCard
+                          key={index}
+                          item={item}
+                          specialCard="true"
+                        />
+                      </SwiperSlide>
+                    );
+                  })}
+                </SliderCustom>
+              </Swiper>
+
+              {/* 
+
               {isLoading ? (
                 <Slider {...settings}>
                   {[...Array(2)].map((item, index) => {
@@ -203,7 +264,7 @@ const SpecialFoodOffers = ({ title }) => {
                     );
                   })}
                 </Slider>
-              )}
+              )} */}
             </>
           </CustomBoxFullWidth>
         </RTL>

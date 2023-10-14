@@ -80,8 +80,8 @@ const AmountWithDiscountedAmount = ({ item, noPrimaryColor }) => {
         <Typography
           variant="h5"
           display="flex"
-          alignItems="center"
-          flexWrap="wrap"
+          alignItems="flex-start"
+          flexDirection={"column"}
           gap="5px"
           sx={{
             fontSize: { xs: "13px", sm: "18px" },

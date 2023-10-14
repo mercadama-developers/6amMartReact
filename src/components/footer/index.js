@@ -26,7 +26,7 @@ const FooterComponent = (props) => {
         },
       }}
     >
-      <FooterTop landingPageData={landingPageData} />
+      {/* <FooterTop landingPageData={landingPageData} /> */}
       <StyledFooterBackground
         nobottommargin={isLandingPage}
       >

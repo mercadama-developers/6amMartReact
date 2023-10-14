@@ -26,6 +26,13 @@ import {
 } from "./sliderSettings";
 import { getLanguage } from "../../../helper-functions/getLanguage";
 
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import { Navigation } from "swiper/modules";
+import PrevIcon from "../../icons/PrevIcon";
+import NextIcon from "../../icons/NextIcon";
+
 export const ButtonLeft = styled(CustomButtonPrimary)(
   ({ theme, language_direction }) => ({
     minWidth: "20px",
@@ -77,7 +84,67 @@ const FeaturedCategories = ({ configData }) => {
               },
             }}
           >
-            <Slider {...settings} ref={slider}>
+            <Swiper
+              modules={[Navigation]}
+              className="mySwiper"
+              navigation={{
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+              }}
+              breakpoints={{
+                0: {
+                  slidesPerView: 1.5,
+                },
+
+                264: {
+                  slidesPerView: 2,
+                },
+                310: {
+                  slidesPerView: 2.5,
+                },
+                370: {
+                  slidesPerView: 3,
+                },
+                465: {
+                  slidesPerView: 4,
+                },
+                580: {
+                  slidesPerView: 5,
+                },
+                700: {
+                  slidesPerView: 6,
+                },
+                900: {
+                  slidesPerView: 7,
+                },
+                1140: {
+                  slidesPerView: 8,
+                },
+              }}
+            >
+              <div className="swiper-button-prev">
+                <PrevIcon />
+              </div>
+              <div className="swiper-button-next">
+                <NextIcon />
+              </div>
+              {featuredCategories
+                ?.slice()
+                .reverse()
+                .map((item, index) => (
+                  <SwiperSlide key={index}>
+                    <FeaturedItemCard
+                      key={index}
+                      image={`${configData?.base_urls?.category_image_url}/${item?.image}`}
+                      title={item?.name}
+                      id={item?.id}
+                      slug={item?.slug}
+                    />
+                  </SwiperSlide>
+                ))}
+            </Swiper>
+
+            {/* <Slider {...settings} ref={slider}>
               {featuredCategories?.map((item, index) => {
                 return (
                   <FeaturedItemCard
@@ -89,7 +156,7 @@ const FeaturedCategories = ({ configData }) => {
                   />
                 );
               })}
-            </Slider>
+            </Slider> */}
           </CustomBoxFullWidth>
         );
       case ModuleTypes.PHARMACY:

@@ -26,6 +26,13 @@ import { HomeComponentsWrapper } from "../HomePageComponents";
 import Menus from "../best-reviewed-items/Menus";
 import { foodNewArrivalsettings, settings } from "./sliderSettings";
 
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import { Navigation } from "swiper/modules";
+import PrevIcon from "../../icons/PrevIcon";
+import NextIcon from "../../icons/NextIcon";
+
 const ImageWrapper = styled(Box)(({ theme }) => ({
   position: "relative",
   display: "flex",
@@ -132,13 +139,57 @@ const NewArrivalStores = () => {
         },
       }}
     >
-      <Slider {...settings} ref={slider}>
+      <Swiper
+        modules={[Navigation]}
+        className="mySwiper"
+        spaceBetween={40}
+        navigation={{
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        }}
+        breakpoints={{
+          0: {
+            slidesPerView: 1,
+          },
+          550: {
+            slidesPerView: 2,
+          },
+
+          900: {
+            slidesPerView: 3,
+          },
+          1150: {
+            slidesPerView: 4,
+          },
+        }}
+      > 
+          <div className="swiper-button-prev">
+            <PrevIcon />
+          </div>
+          <div className="swiper-button-next">
+            <NextIcon />
+          </div> 
+
+        {storeData?.map((item, index) => {
+          return (
+            <SwiperSlide key={index}>
+              <NearbyStoreCard
+                key={index}
+                configData={configData}
+                item={item}
+              />
+            </SwiperSlide>
+          );
+        })}
+      </Swiper>
+
+      {/* <Slider {...settings} ref={slider}>
         {storeData?.map((item, index) => {
           return (
             <NearbyStoreCard key={index} configData={configData} item={item} />
           );
         })}
-      </Slider>
+      </Slider> */}
     </SliderWrapper>
   );
 

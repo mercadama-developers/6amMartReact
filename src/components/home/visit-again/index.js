@@ -17,6 +17,13 @@ import { IsSmallScreen } from "../../../utils/CommonValues";
 import CustomContainer from "../../container";
 import { ModuleTypes } from "../../../helper-functions/moduleTypes";
 
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import { Navigation } from "swiper/modules";
+import PrevIcon from "../../icons/PrevIcon";
+import NextIcon from "../../icons/NextIcon";
+
 const VisitAgain = (props) => {
   const { configData } = props;
   const theme = useTheme();
@@ -72,7 +79,7 @@ const VisitAgain = (props) => {
           mt={IsSmallScreen() ? "2px" : "30px"}
           spacing={1}
         >
-          {IsSmallScreen() ? (
+          {!IsSmallScreen() ? (
             <CustomContainer>
               <CustomStackFullWidth
                 alignItems={getModuleWiseData?.()?.mainPosition}
@@ -93,6 +100,7 @@ const VisitAgain = (props) => {
               <Subtitle1 text={getModuleWiseData?.()?.subHeading} />
             </>
           )}
+          {/* 
           <SliderCustom
             nopadding="true"
             sx={{
@@ -101,6 +109,7 @@ const VisitAgain = (props) => {
             }}
           >
             <Slider {...settings}>
+              {console.log("settings", settings)}
               {visitedStores?.reverse()?.map((item, index) => {
                 return (
                   <VisitAgainCard
@@ -112,8 +121,69 @@ const VisitAgain = (props) => {
                 );
               })}
             </Slider>
-          </SliderCustom>
+          </SliderCustom> */}
         </CustomStackFullWidth>
+      )}
+      {visitedStores.length > 0 && (
+        <div style={{ backgroundColor: "#FF9D000A", padding: 30 }}>
+          <Swiper
+            modules={[Navigation]}
+            className="mySwiper"
+            spaceBetween={0}
+            navigation={{
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            }}
+            breakpoints={{
+              0: {
+                slidesPerView: 1,
+              },
+              420: {
+                slidesPerView: 1.5,
+              },
+              550: {
+                slidesPerView: 2,
+              },
+              650: {
+                slidesPerView: 2.5,
+              },
+
+              800: {
+                slidesPerView: 3,
+              },
+              1250: {
+                slidesPerView: 4,
+              },
+            }}
+          >
+            <div className="swiper-button-prev">
+              <PrevIcon />
+            </div>
+            <div className="swiper-button-next">
+              <NextIcon />
+            </div>
+            <SliderCustom
+              nopadding="true"
+              sx={{
+                backgroundColor: getModuleWiseData?.()?.bgColor,
+                padding: { xs: "7px", md: "17px" },
+              }}
+            >
+              {visitedStores?.map((item, index) => {
+                return (
+                  <SwiperSlide>
+                    <VisitAgainCard
+                      key={index}
+                      item={item}
+                      onlyshimmer
+                      configData={configData}
+                    />
+                  </SwiperSlide>
+                );
+              })}
+            </SliderCustom>
+          </Swiper>
+        </div>
       )}
     </>
   );

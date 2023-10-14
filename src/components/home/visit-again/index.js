@@ -125,7 +125,7 @@ const VisitAgain = (props) => {
         </CustomStackFullWidth>
       )}
       {visitedStores.length > 0 && (
-        <div style={{ backgroundColor: "#FF9D001A", padding: 30 }}>
+        <div style={{ backgroundColor: "#FF9D000A", padding: 30 }}>
           <Swiper
             modules={[Navigation]}
             className="mySwiper"

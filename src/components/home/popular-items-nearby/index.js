@@ -19,7 +19,12 @@ import Subtitle1 from "../../typographies/Subtitle1";
 import { HomeComponentsWrapper } from "../HomePageComponents";
 import { settings } from "./SliderSettings";
 import { getLanguage } from "../../../helper-functions/getLanguage";
-
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import { Navigation } from "swiper/modules";
+import PrevIcon from "../../icons/PrevIcon";
+import NextIcon from "../../icons/NextIcon";
 export const Shimmer = () => {
   return (
     <CardWrapper>
@@ -64,32 +69,59 @@ const PopularItemsNearby = ({ title, subTitle }) => {
             <CustomBoxFullWidth>
               <Grid container spacing={2}>
                 <Grid item xs={12} sm={12} md={12} lg={12} container>
-                  <SliderCustom
-                    nopadding="true"
-                    sx={{
-                      "& .slick-slide": {
-                        marginY: "-15px",
+                  <Swiper
+                    modules={[Navigation]}
+                    className="mySwiper"
+                    spaceBetween={0}
+                    navigation={{
+                      nextEl: ".swiper-button-next",
+                      prevEl: ".swiper-button-prev",
+                    }}
+                    breakpoints={{
+                      0: {
+                        slidesPerView: 1,
+                      },
+
+                      420: {
+                        slidesPerView: 1,
+                      },
+                      510: {
+                        slidesPerView: 1.5,
+                      },
+                      750: {
+                        slidesPerView: 1.7,
+                      },
+                      870: {
+                        slidesPerView: 1.7,
+                      },
+
+                      1060: {
+                        slidesPerView: 2.5,
+                      },
+                      1250: {
+                        slidesPerView: 3,
                       },
                     }}
                   >
-                    <Slider {...settings}>
-                      {popularItemsNearby?.products?.map((item, index) => {
-                        return (
-                          <ProductCard
-                            key={index}
-                            item={item}
-                            cardheight="160px"
-                            horizontalcard="true"
-                            cardFor="popular items"
-                          />
-                        );
-                      })}
-                    </Slider>
-                  </SliderCustom>
+                    <div className="swiper-button-prev">
+                      <PrevIcon />
+                    </div>
+                    <div className="swiper-button-next">
+                      <NextIcon />
+                    </div>
+                    {popularItemsNearby?.products?.map((item, index) => (
+                      <SwiperSlide>
+                        <ProductCard
+                          key={index}
+                          item={item}
+                          cardheight="160px"
+                          horizontalcard="true"
+                          cardFor="popular items"
+                        />
+                      </SwiperSlide>
+                    ))}
+                  </Swiper>
                 </Grid>
-                {/*<Grid item xs={12} sm={5} md={3}>*/}
-                {/*  <ItemsCampaign />*/}
-                {/*</Grid>*/}
               </Grid>
             </CustomBoxFullWidth>
           </CustomStackFullWidth>

@@ -27,7 +27,12 @@ import {
 import { IconButtonGray, LeftArrowStyle, RightArrowStyle } from "./brt.style";
 import { ScrollBox } from "../module-wise-components/ecommerce/NewArrivals";
 import { Stack } from "@mui/system";
-
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import { Navigation } from "swiper/modules";
+import PrevIcon from "../../icons/PrevIcon";
+import NextIcon from "../../icons/NextIcon";
 const BestReviewedItems = (props) => {
   const { title, leftImage } = props;
   const [menu, setMenu] = useState([]);
@@ -93,16 +98,56 @@ const BestReviewedItems = (props) => {
     }
   }, [selectedMenuIndex]);
 
-  const slides = () =>
-    filteredData?.map((product) => (
-      <ProductCard
-        key={product?.id}
-        item={product}
-        cardheight="365px"
-        cardFor="vertical"
-        // cardFor="popular items"
-      />
-    ));
+  const slides = () => {
+    return (
+      <Swiper
+        modules={[Navigation]}
+        className="mySwiper"
+        spaceBetween={15}
+        navigation={{
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        }}
+        breakpoints={{
+          0: {
+            slidesPerView: 1,
+          },
+          375: {
+            slidesPerView: 2,
+          },
+          480: {
+            slidesPerView: 2,
+          },
+          750: {
+            slidesPerView: 3,
+          },
+          1000: {
+            slidesPerView: 4,
+          },
+          1220: {
+            slidesPerView: 5,
+          },
+        }}
+      >
+        <div className="swiper-button-prev">
+          <PrevIcon />
+        </div>
+        <div className="swiper-button-next">
+          <NextIcon />
+        </div>
+        {filteredData?.map((product) => (
+          <SwiperSlide key={product?.id}>
+            <ProductCard
+              item={product}
+              cardheight="365px"
+              cardFor="vertical"
+              // cardFor="popular items"
+            />
+          </SwiperSlide>
+        ))}
+      </Swiper>
+    );
+  };
 
   return (
     <>
@@ -198,7 +243,7 @@ const BestReviewedItems = (props) => {
                 <Grid item xs={12} md={12} sm={12} lg={12}>
                   <Grid item md={12} container position="relative">
                     <CustomStackFullWidth justifyContent="right" key={reRender}>
-                      {isMedium && filteredData.length > 3 && (
+                      {/* {isMedium && filteredData.length > 3 && (
                         <LeftArrowStyle top="45%" left={0}>
                           <IconButtonGray
                             onClick={() => SliderRef.current.slickPrev()}
@@ -250,11 +295,11 @@ const BestReviewedItems = (props) => {
                             )}
                           </IconButtonGray>
                         </RightArrowStyle>
-                      )}
+                      )} */}
                       <SliderCustom>
-                        <Slider ref={SliderRef} {...bestReviewedSliderSettings}>
-                          {slides()}
-                        </Slider>
+                        {/* <Slider ref={SliderRef} {...bestReviewedSliderSettings}>
+                        {slides()}
+                        </Slider> */}
                       </SliderCustom>
                     </CustomStackFullWidth>
                   </Grid>
@@ -262,6 +307,7 @@ const BestReviewedItems = (props) => {
               </Grid>
             </HomeComponentsWrapper>
           )}
+          {slides()}
         </>
       )}
     </>

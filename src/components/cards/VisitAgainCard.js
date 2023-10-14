@@ -227,6 +227,7 @@ const VisitAgainCard = (props) => {
           position: "relative",
           height: { xs: "100px", md: "132px" },
           width: "100%",
+          overflow:"hidden",
         }}
       >
         <CustomImageContainer

@@ -88,7 +88,7 @@ const Grocery = (props) => {
 				<CustomContainer>
 					<BestReviewedItems
 						menus={menus}
-						title="Best Reviewed Items"
+						title="Best reviewed items"
 						leftImage={pharmacyReviewedImage}
 					/>
 				</CustomContainer>

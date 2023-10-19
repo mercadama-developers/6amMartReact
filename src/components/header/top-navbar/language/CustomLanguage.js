@@ -62,7 +62,7 @@ const CustomLanguage = ({
       );
       localStorage.setItem(
         "language-setting",
-        JSON.stringify(languageSetting || "en")
+        JSON.stringify(languageSetting || "br")
       );
     }
   }, []);
@@ -200,7 +200,7 @@ const CustomLanguage = ({
       >
         {languageList?.map((lan, index) => (
           <MenuItem
-            onClick={() => handleSelection(lan)}
+            onClick={() => handleSelection("br")}
             disableRipple
             key={index}
             sx={{

@@ -1,6 +1,7 @@
 import usFlag from "../../../../public/landingpage/us.svg";
 import arabicFlag from "../../../../public/landingpage/arabic-flag-svg.svg";
 import vietnamflag from "../../../../assets/country-flag/vn.svg";
+import brazil from "../../../../assets/country-flag/br.svg";
 
 export const languageLists = [
   {
@@ -20,5 +21,11 @@ export const languageLists = [
     languageCode: "vi",
     countryCode: "VN",
     countryFlag: vietnamflag.src,
+  },
+  {
+    languageName: "Brazil",
+    languageCode: "br",
+    countryCode: "BR",
+    countryFlag: brazil.src,
   },
 ];

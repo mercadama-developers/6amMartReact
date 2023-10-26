@@ -55,7 +55,7 @@ const TopNavBar = () => {
 											<AddressReselect location={location} />
 										)}
 									</CustomStackForLoaction>
-									<Stack
+									{/* <Stack
 										direction="row"
 										spacing={2}
 										justifyContent="end"
@@ -67,7 +67,7 @@ const TopNavBar = () => {
 											countryCode={countryCode}
 											language={language}
 										/>
-									</Stack>
+									</Stack> */}
 								</Stack>
 							</Box>
 							{!location && (
@@ -84,7 +84,7 @@ const TopNavBar = () => {
 										flexGrow: 1,
 									}}
 								>
-									{/* <Logo src={logoSm.src} /> */}
+									<Logo src={logoSm.src} />
 									<Stack alignItems="center" justifyContent="center">
 										<LogoSide width="126px" configData={configData} />
 									</Stack>

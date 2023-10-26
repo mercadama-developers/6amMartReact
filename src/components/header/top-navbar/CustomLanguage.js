@@ -36,7 +36,7 @@ const CustomLanguage = ({ formmobilemenu }) => {
       );
       localStorage.setItem(
         "language-setting",
-        JSON.stringify(languageSetting || "en")
+        JSON.stringify(languageSetting || "br")
       );
     }
   }, []);
@@ -72,7 +72,7 @@ const CustomLanguage = ({ formmobilemenu }) => {
     setLanguage(lan);
 
     localStorage.setItem("language-setting", JSON.stringify(lan));
-    if (lan === "en") {
+    if (lan === "br") {
       saveSettings({
         ...values,
         direction: "ltr",
@@ -103,7 +103,7 @@ const CustomLanguage = ({ formmobilemenu }) => {
           <Stack color={theme.palette.neutral[1000]}>
             <img
               width="20px"
-              src={language === "en" ? eng.src : arabicImg.src}
+              src={language === "br" ? eng.src : arabicImg.src}
             />
           </Stack>
         }
@@ -114,7 +114,7 @@ const CustomLanguage = ({ formmobilemenu }) => {
         }
       >
         <Typography color={theme.palette.neutral[1000]}>
-          {language === "en" ? "English" : "Arabic"}
+          {language === "br" ? "Brazil" : "English"}
         </Typography>
       </TopBarButton>
       <StyledMenu
@@ -141,7 +141,7 @@ const CustomLanguage = ({ formmobilemenu }) => {
             <ListItemIcon>
               <img
                 width="20px"
-                src={lan.key === "en" ? eng.src : arabicImg.src}
+                src={lan.key === "br" ? br.src : eng.src}
               />
             </ListItemIcon>
             {lan.value}

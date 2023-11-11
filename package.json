@@ -28,7 +28,6 @@
     "caniuse-lite": "^1.0.30001503",
     "dayjs": "^1.11.7",
     "emoji-picker-react": "^4.4.9",
-    "eslint": "8.29.0",
     "eslint-config-next": "13.0.6",
     "firebase": "^9.15.0",
     "formik": "^2.2.9",

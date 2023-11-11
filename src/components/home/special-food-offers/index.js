@@ -236,9 +236,8 @@ const SpecialFoodOffers = ({ title }) => {
                 <SliderCustom nopadding="true">
                   {data?.products?.map((item, index) => {
                     return (
-                      <SwiperSlide>
-                        <ProductCard
-                          key={index}
+                      <SwiperSlide key={index}>
+                        <ProductCard 
                           item={item}
                           specialCard="true"
                         />

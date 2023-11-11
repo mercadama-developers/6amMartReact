@@ -171,9 +171,8 @@ const VisitAgain = (props) => {
             >
               {visitedStores?.map((item, index) => {
                 return (
-                  <SwiperSlide>
+                  <SwiperSlide key={index}>
                     <VisitAgainCard
-                      key={index}
                       item={item}
                       onlyshimmer
                       configData={configData}

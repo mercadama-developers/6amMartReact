@@ -84,7 +84,7 @@ const TopNavBar = () => {
 										flexGrow: 1,
 									}}
 								>
-									<Logo src={logoSm.src} />
+									{/* <Logo src={logoSm.src} /> */}
 									<Stack alignItems="center" justifyContent="center">
 										<LogoSide width="126px" configData={configData} />
 									</Stack>

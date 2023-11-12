@@ -170,6 +170,7 @@ const TrackOrder = ({ configData, trackOrderData }) => {
   };
   useEffect(() => {
     handleStepper();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [actStep, trackOrderData]);
   return (
     <CustomStackFullWidth

@@ -248,6 +248,7 @@ const SearchResult = (props) => {
         });
       }
     }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [searchData, categoryData, storeData, currentTab, specialOfferData]);
   //ALL STORES AND ALL ITEMS
 
@@ -265,6 +266,7 @@ const SearchResult = (props) => {
         });
       }
     }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [allItems, allStoresData, currentTab]);
 
   useEffect(() => {
@@ -272,10 +274,12 @@ const SearchResult = (props) => {
       searchValuesHandler();
       setOffset((prev) => prev + 1);
     }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [inView, searchValue, currentTab]);
   //---------------------------------------------------------> INITIAL PRICE RANGE SET
   useEffect(() => {
     handleFilterSelection();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [priceRange, currentTab]);
 
   const handleFilterSelection = () => {

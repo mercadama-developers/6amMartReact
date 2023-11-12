@@ -43,6 +43,7 @@ const OtherOrder = (props) => {
   } = useGetTrackOrderData(id);
   useEffect(() => {
     refetchTrackOrder();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const { mutate, isLoading: refundIsLoading } = useStoreRefundRequest();

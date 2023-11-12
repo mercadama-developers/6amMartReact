@@ -24,6 +24,7 @@ export const ChoiceValues = (props) => {
         radioData.choiceType,
         radioData.isChecked
       );
+      // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [radioData]);
   const handleRadioData = (
     e,

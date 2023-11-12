@@ -50,6 +50,7 @@ const AddressReselect = ({ location }) => {
 				window.location.reload();
 			}
 		}
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [address]);
 	const handleClickToLandingPage = () => {
 		setOpenPopover(true);

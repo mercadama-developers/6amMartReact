@@ -50,16 +50,19 @@ const Banners = (props) => {
 		if (banners.banners.length === 0 && banners.campaigns.length === 0) {
 			refetchBannerData();
 		}
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [banners]);
 	useEffect(() => {
 		if (data) {
 			dispatch(setBanners(data));
 		}
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [data]);
 	useEffect(() => {
 		if (banners.banners.length > 0 || banners.campaigns.length > 0) {
 			handleBannersData();
 		}
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [banners]);
 
 	const handleBannersData = () => {

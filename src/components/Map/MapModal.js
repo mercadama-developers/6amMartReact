@@ -136,6 +136,7 @@ const MapModal = ({
                 lng: coords.longitude,
             });
         }
+            // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     const handleLocationSelection = (value) => {

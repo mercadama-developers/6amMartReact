@@ -155,6 +155,7 @@ const AddressForm = ({
     addAddressFormik.setFieldValue("address_type", addressType);
     addAddressFormik.setFieldValue("latitude", lat);
     addAddressFormik.setFieldValue("longitude", lng);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [deliveryAddress, addressType, lat, lng]);
   const lanDirection = getLanguage() ? getLanguage() : "ltr";
 

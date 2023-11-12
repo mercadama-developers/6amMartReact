@@ -108,6 +108,7 @@ const NearbyStoreCard = (props) => {
   const router = useRouter();
   useEffect(() => {
     wishlistItemExistHandler();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [wishLists]);
   const wishlistItemExistHandler = () => {
     if (wishLists?.store?.find((wishItem) => wishItem.id === item?.id)) {

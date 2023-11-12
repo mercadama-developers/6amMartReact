@@ -5,6 +5,7 @@ export const useGetAllModules = () => {
     const {data, refetch, isLoading} = useGetModule()
     useEffect(() => {
         refetch()
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     return {data,isLoading};

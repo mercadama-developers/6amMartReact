@@ -53,6 +53,7 @@ const PopularStores = (props) => {
   };
   useEffect(() => {
     handleStoreData();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [data]);
   useEffect(() => {
     if (inView) {
@@ -61,6 +62,7 @@ const PopularStores = (props) => {
       //   setOffSet((prevState) => prevState + 1);
       // }
     }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [inView]);
   // useEffect(() => {
   //   if (offset === 1) {

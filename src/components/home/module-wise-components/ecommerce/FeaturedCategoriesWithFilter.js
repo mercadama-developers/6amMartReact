@@ -152,6 +152,7 @@ const FeaturedCategoriesWithFilter = (props) => {
 
   useEffect(() => {
     refetch();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [categoryId]);
   const featureCategoryData = featureData?.data?.filter(
     (item) => item.featured === 1

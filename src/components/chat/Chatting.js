@@ -66,6 +66,7 @@ const Chatting = ({ configData }) => {
       name: deliveryman_name,
       image: deliveryManData_image,
     });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [deliveryman_name]);
 
   const handleCloseSidebar = () => {
@@ -146,6 +147,7 @@ const Chatting = ({ configData }) => {
     if (channelId) {
       refetch();
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [channelId]);
 
   useEffect(() => {
@@ -179,6 +181,7 @@ const Chatting = ({ configData }) => {
   console.log({ deliveryInfo });
   useEffect(() => {
     refetchChannelList().then();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const { mutate: storeMessageByMutate, isLoading: isLoadingMessageSend } =

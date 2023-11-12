@@ -53,6 +53,7 @@ const Index = ({ configData, landingPageData }) => {
   useEffect(() => {
     refetch();
     storeRefetch();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [category_id]);
 
   return (

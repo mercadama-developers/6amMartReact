@@ -25,6 +25,7 @@ const VariationButtons = ({ modalData, changeChoices }) => {
   };
   useEffect(() => {
     handleChoices(value);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [value]);
   const handleChoices = (value) => {
     let finalVariation = "";

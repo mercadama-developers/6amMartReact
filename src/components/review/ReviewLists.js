@@ -22,6 +22,7 @@ const ReviewLists = ({ id }) => {
   const { data, refetch } = useGetStoreReviews(id);
   useEffect(() => {
     refetch();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (

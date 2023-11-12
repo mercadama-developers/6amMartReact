@@ -100,6 +100,7 @@ const GetLocationForm = ({
     if (geoCodeResults?.results && showCurrentLocation) {
       setCurrentLocation(geoCodeResults?.results[0]?.formatted_address);
     }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [geoCodeResults, location]);
   const { data: zoneData } = useGetZoneId(location, zoneIdEnabled);
 
@@ -132,6 +133,7 @@ const GetLocationForm = ({
 
   useEffect(() => {
     handleLocation(location, currentLocation);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [location, currentLocation]);
 
   return (

@@ -65,12 +65,14 @@ const FeaturedCategories = ({ configData }) => {
     //   refetch();
     // }
     refetch();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [featuredCategories]);
 
   useEffect(() => {
     if (data) {
       dispatch(setFeaturedCategories(data?.data));
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [data]);
 
   const moduleWiseCard = () => {

@@ -27,6 +27,7 @@ const SimilarProducts = ({ productId }) => {
     useGetSimilarProduct(productId);
   useEffect(() => {
     refetch();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [productId]);
 
   const SliderRef = useRef(null);

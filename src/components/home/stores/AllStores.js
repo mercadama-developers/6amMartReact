@@ -57,6 +57,7 @@ const AllStores = (props) => {
   };
   useEffect(() => {
     handleStoreData();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [data]);
   useEffect(() => {
     if (inView) {
@@ -65,6 +66,7 @@ const AllStores = (props) => {
       //   setOffSet((prevState) => prevState + 1);
       // }
     }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [inView]);
   // useEffect(() => {
   //   if (offset === 1) {

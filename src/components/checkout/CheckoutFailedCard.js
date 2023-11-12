@@ -27,6 +27,7 @@ const CheckoutFailedCard = ({ id }) => {
   const { data: cancelReasonsData, refetch } = useGetOrderCancelReason();
   useEffect(() => {
     refetch().then();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   const currentLatLng = JSON.parse(
     window.localStorage.getItem("currentLatLng")

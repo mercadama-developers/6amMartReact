@@ -17,6 +17,7 @@ const ProductUpdateModal = ({
   const { configData } = useSelector((state) => state.configDataSettings);
   useEffect(() => {
     setProduct(cartItem);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   const handleModalClose = () => {
     setOpenModal(false);

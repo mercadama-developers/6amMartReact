@@ -34,6 +34,7 @@ const RateAndReview = () => {
 
   useEffect(() => {
     id && refetch() && refetchTrackOrder();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [id]);
 
   return (

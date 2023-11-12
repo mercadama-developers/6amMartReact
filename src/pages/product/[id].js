@@ -11,6 +11,7 @@ const Index = ({ configData, productDetailsData, productType }) => {
   const [productDetails, setProductDetails] = useState([]);
   useEffect(() => {
     handleProductDetails();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [productDetailsData, cartList]);
 
   const handleProductDetails = () => {

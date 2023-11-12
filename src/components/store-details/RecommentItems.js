@@ -26,6 +26,7 @@ const RecommendItems = ({ store_id }) => {
   });
   useEffect(() => {
     refetch();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [store_id]);
   const Recommended = t("Recommended");
   return (

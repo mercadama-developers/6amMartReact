@@ -38,6 +38,7 @@ const VariationsManager = ({ productDetailsData, handleChoices }) => {
   };
   useEffect(() => {
     handleChoice(value);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [value]);
   const handleChoice = (value) => {
     let finalVariation = "";

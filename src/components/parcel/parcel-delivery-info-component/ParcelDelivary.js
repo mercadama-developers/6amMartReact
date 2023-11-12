@@ -68,6 +68,7 @@ const PercelDelivery = ({ configData }) => {
 
   useEffect(() => {
     addAddressFormik.setFieldValue("senderPhone", profileInfo?.phone);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [profileInfo?.phone]);
 
   const senderNameHandler = (value) => {

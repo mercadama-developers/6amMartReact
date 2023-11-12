@@ -23,6 +23,7 @@ const MainLayout = ({ children, configData, landingPageData }) => {
     if (router.pathname === "/home") {
       refetch();
     }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   if (data) {
     const selectedModuleType = JSON.parse(

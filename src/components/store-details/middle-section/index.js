@@ -304,6 +304,7 @@ const MiddleSection = (props) => {
     if (state.searchKey === "" || !state.searchKey) {
       refetch();
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [state.categoryId, offset, state.type, id]);
 
   useEffect(() => {
@@ -320,6 +321,7 @@ const MiddleSection = (props) => {
         });
       }
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [data, searchData]);
   useEffect(() => {
     if (inView) {
@@ -328,6 +330,7 @@ const MiddleSection = (props) => {
         setOffset((prev) => prev + 1);
       }
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [inView]);
 
   const handleCategoryId = (id) => {
@@ -362,17 +365,20 @@ const MiddleSection = (props) => {
         fetchNextPage();
       }
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [state.searchKey, offset]);
   useEffect(() => {
     if (JSON.stringify(state.minMax) !== JSON.stringify([0, 1])) {
       refetch();
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [state.minMax]);
 
   useEffect(() => {
     if (state?.data?.products?.length > 0) {
       sortWiseDataHandle();
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [state.sortBy]);
 
   const handleChangePrice = (value) => {
@@ -405,6 +411,7 @@ const MiddleSection = (props) => {
   useEffect(() => {
     handleSelection();
     setOffset(1);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [checkState?.veg, checkState.non_veg]);
 
   let moduleId = getModuleId()

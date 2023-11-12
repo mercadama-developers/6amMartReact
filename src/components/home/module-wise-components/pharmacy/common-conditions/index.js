@@ -64,11 +64,13 @@ const CommonConditions = (props) => {
     if (bestReviewedItems.products.length === 0) {
       refetch();
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [bestReviewedItems]);
   useEffect(() => {
     if (data) {
       dispatch(setBestReviewedItems(data));
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [data]);
 
   return (

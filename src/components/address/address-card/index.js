@@ -17,6 +17,7 @@ import { setOpenAddressModal } from "../../../redux/slices/addAddress";
 import AddNewAddress from "../add-new-address";
 import { t } from "i18next";
 import { useSelector } from "react-redux";
+import Image from "next/image";
 
 export const AddressTypography = styled(Typography)(
   ({ theme, fontWeight }) => ({
@@ -86,7 +87,7 @@ const AddressCard = (props) => {
               <AddressEditSvg />
             </IconButton>
             <IconButton onClick={() => setOpenDelete(true)}>
-              <img src={deleteIcon.src} alt="delete" />
+              <Image src={deleteIcon.src} alt="delete" />
             </IconButton>
           </Stack>
         </CustomStackFullWidth>

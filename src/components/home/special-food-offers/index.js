@@ -67,6 +67,7 @@ const SpecialFoodOffers = ({ title }) => {
   const lanDirection = getLanguage() ? getLanguage() : "ltr";
   useEffect(() => {
     refetch();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   const settings = {
     dots: false,

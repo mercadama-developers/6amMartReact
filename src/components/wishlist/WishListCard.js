@@ -195,6 +195,7 @@ const WishListCard = ({ item }) => {
   };
   useEffect(() => {
     wishlistItemExistHandler();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [wishLists]);
   const wishlistItemExistHandler = () => {
     if (wishLists?.item?.find((wishItem) => wishItem.id === item?.id)) {

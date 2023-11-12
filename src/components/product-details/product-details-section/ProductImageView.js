@@ -63,6 +63,7 @@ const ProductImageView = ({
   const tempProduct = productImage;
   useEffect(() => {
     setPreViewImage(tempProduct);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [productImage]);
 
   const handleClick = (item, index) => {

@@ -18,6 +18,7 @@ const Index = ({ configData, campaignsDetails }) => {
     useGetBasicCampaignsDetails({ id });
   useEffect(() => {
     refetch();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [id]);
 
   return (

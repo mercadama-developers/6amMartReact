@@ -87,6 +87,7 @@ const HaveCoupon = (props) => {
     return () => {
       dispatch(setCouponInfo(null));
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   const removeCoupon = () => {
     setCouponDiscount(null);

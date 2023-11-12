@@ -79,10 +79,12 @@ const DeliveryAddress = ({
 
   useEffect(() => {
     refetch();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   useEffect(() => {
     // handleSize(data.total_size)
     data && setAllAddress([mainAddress, ...data.addresses]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [data]);
 
   const handleLatLng = (values) => {

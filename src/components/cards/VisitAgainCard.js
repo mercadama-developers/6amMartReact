@@ -138,6 +138,7 @@ const VisitAgainCard = (props) => {
       : [];
   useEffect(() => {
     wishlistItemExistHandler();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [wishLists]);
 
   const quickViewHandleClick = (e) => {

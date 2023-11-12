@@ -59,6 +59,7 @@ const TrackParcelOrderDrawer = (props) => {
     if (orderId) {
       refetch();
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [orderId]);
   useEffect(() => {
     const interval = setInterval(() => {
@@ -70,6 +71,7 @@ const TrackParcelOrderDrawer = (props) => {
     return () => {
       clearInterval(interval); // Clear the interval on component unmount
     };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [refetch]);
   const handleStepper = () => {
     if (trackOrderData?.order_status === "panding") {
@@ -84,6 +86,7 @@ const TrackParcelOrderDrawer = (props) => {
   };
   useEffect(() => {
     handleStepper();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [actStep, trackOrderData, orderId]);
   const steps = [
     {

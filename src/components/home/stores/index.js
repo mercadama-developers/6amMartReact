@@ -189,6 +189,7 @@ const Stores = (props) => {
         />
       );
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [selectedMenuIndex, selectedFilterValue]);
   return (
     <HomeComponentsWrapper sx={{ paddingTop: "1rem" }}>

@@ -89,6 +89,7 @@ const DetailsAndReviews = (props) => {
 
   useEffect(() => {
     refetch();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [productId, offSet]);
 
   return (

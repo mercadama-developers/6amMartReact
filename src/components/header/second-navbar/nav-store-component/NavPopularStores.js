@@ -34,6 +34,7 @@ const NavPopularStore = () => {
 		if (popularStores.length === 0) {
 			refetch();
 		}
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, []);
 	useEffect(() => {
 		if (
@@ -43,6 +44,7 @@ const NavPopularStore = () => {
 		) {
 			dispatch(setPopularStores(data?.pages?.[0]?.stores));
 		}
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [data]);
 
 	const handleClick = (item) => {

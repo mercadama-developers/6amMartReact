@@ -109,6 +109,7 @@ const GoogleLoginComp = (props) => {
     if (!isInitialized) {
       initializeGoogleSignIn();
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [clientId, isInitialized]);
   useEffect(() => {
     /* global google */

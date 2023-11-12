@@ -49,14 +49,16 @@ const NewlyJoined = (props) => {
   };
   useEffect(() => {
     handleStoreData();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [data]);
   useEffect(() => {
     if (inView) {
       fetchNextPage();
       // if (!isLoading) {
       //   setOffSet((prevState) => prevState + 1);
-      // }
+      // } 
     }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [inView]);
   // useEffect(() => {
   //   if (offset === 1) {

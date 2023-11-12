@@ -52,6 +52,7 @@ const Index = ({ configData }) => {
   useEffect(() => {
     refetch();
     storeRefetch();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [category_id, type, offset]);
 
   return (

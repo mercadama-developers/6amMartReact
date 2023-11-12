@@ -39,6 +39,7 @@ const CustomSlider = ({ handleChangePrice, minMax, priceFilterRange }) => {
     } else {
       handleChangePrice(value);
     }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [value]);
   return (
     <Stack

@@ -102,11 +102,13 @@ export const ModuleSelection = ({
 	const isXSmall = useMediaQuery(theme.breakpoints.down("sm"));
 	useEffect(() => {
 		location && refetch();
+		    // eslint-disable-next-line react-hooks/exhaustive-deps
 	}, []);
 	useEffect(() => {
 		if (data?.length > 0) {
 			dispatch(setModules(data));
 		}
+		    // eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [data]);
 	const handleCloseModal = () => {
 		setOpenModal(false);

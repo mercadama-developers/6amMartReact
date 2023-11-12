@@ -26,6 +26,7 @@ const TypeWiseStore = ({ storeType, title }) => {
     } else {
       popularRefetch();
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [type]);
 
   const renderShimmer = () => (

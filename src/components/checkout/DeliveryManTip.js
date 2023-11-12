@@ -46,6 +46,7 @@ const DeliveryManTip = ({
   };
   useEffect(() => {
     debouncedSetInputValue(fieldValue);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [fieldValue]);
 
   const handleShow = () => {

@@ -11,6 +11,7 @@ const SinglePrescriptionUpload = (props) => {
   const [image, setImage] = useState(addImage.src);
   useEffect(() => {
     typeof image !== "string" && handleImageUpload?.(image);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [image]);
 
   const singleFileUploadHandlerForImage = (value) => {

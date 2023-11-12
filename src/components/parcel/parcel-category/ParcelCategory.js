@@ -15,6 +15,7 @@ const ParcelCategory = () => {
   const { data, refetch } = useGetParcelCategory();
   useEffect(() => {
     refetch();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   return (
     <CustomStackFullWidth

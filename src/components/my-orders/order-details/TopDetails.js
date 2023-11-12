@@ -103,6 +103,7 @@ const TopDetails = (props) => {
   const { data: cancelReasonsData, refetch } = useGetOrderCancelReason();
   useEffect(() => {
     refetch().then();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const { mutate: orderCancelMutation, isLoading: orderLoading } =

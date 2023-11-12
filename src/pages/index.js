@@ -23,9 +23,11 @@ const Root = (props) => {
       }
     } else {
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [configData]);
   useEffect(() => {
     dispatch(setConfigData(configData));
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [configData]);
 
   return (

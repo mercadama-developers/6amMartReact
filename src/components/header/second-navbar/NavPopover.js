@@ -53,11 +53,13 @@ const NavPopover = ({
     if (categories.length === 0) {
       refetch();
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   useEffect(() => {
     if (categoriesData?.data) {
       dispatch(setCategories(categoriesData?.data));
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [categoriesData]);
   const popoverHandle = () => {
     if (popoverFor === "category") {

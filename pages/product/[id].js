@@ -12,6 +12,7 @@ const Index = ({ configData, productDetailsData, landingPageData }) => {
 
   useEffect(() => {
     handleProductDetails();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [productDetailsData, cartList]);
 
   const handleProductDetails = () => {

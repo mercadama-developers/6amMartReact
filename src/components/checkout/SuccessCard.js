@@ -38,6 +38,7 @@ const SuccessCard = ({ configData, total }) => {
         setTotalAmount(localStorage.getItem("totalAmount"));
       }
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   const handlePoints = () => {
     if (totalAmount && configData?.loyalty_point_status === 1) {

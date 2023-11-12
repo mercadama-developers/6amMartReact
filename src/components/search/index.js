@@ -64,6 +64,7 @@ const ProductSearchPage = ({ configData }) => {
     if (searchValue !== "") {
       refetch();
     }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [searchValue, currentTab]);
   useEffect(() => {
     setOffset(1);
@@ -71,6 +72,7 @@ const ProductSearchPage = ({ configData }) => {
 
   useEffect(() => {
     handleFilteredData(filterData, data);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [checkfilter]);
 
   const handleFilter = () => {

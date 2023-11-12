@@ -131,6 +131,7 @@ const HeroLocationForm = () => {
     if (geoCodeResults?.results && showCurrentLocation) {
       setCurrentLocation(geoCodeResults?.results[0]?.formatted_address);
     }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [geoCodeResults, location]);
 
   const { data: zoneData } = useGetZoneId(location, zoneIdEnabled);

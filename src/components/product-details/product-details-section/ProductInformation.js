@@ -75,6 +75,7 @@ const ProductInformation = ({
       state.selectedOptions,
       state.modalData
     );
+        // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [productDetailsData]);
 
   const handleChoices = (option, choice) => {

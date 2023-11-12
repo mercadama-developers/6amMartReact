@@ -34,6 +34,7 @@ const MultipleCheckboxWithTitle = (props) => {
 
   useEffect(() => {
     selectedCategoriesHandler?.(selectedItems);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [selectedItems]);
   useEffect(() => {
     if (searchValue === VIEW_ALL_TEXT.allCategories && data?.length > 0) {
@@ -46,6 +47,7 @@ const MultipleCheckboxWithTitle = (props) => {
       };
       checkHandler(selectedCategory);
     }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [data, searchValue, id]);
   const checkHandler = (checkedData) => {
     const parent = data?.find((item) => item?.id === checkedData?.id);

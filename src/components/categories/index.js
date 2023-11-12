@@ -24,10 +24,12 @@ const Categories = (props) => {
   );
   useEffect(() => {
     refetch();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   useEffect(() => {
     refetch();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [searchKey]);
   const handleSearchResult = async (values) => {
     if (values === "") {

@@ -26,11 +26,13 @@ const NavNewStore = () => {
 		if (newStores.length === 0) {
 			refetch();
 		}
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, []);
 	useEffect(() => {
 		if (data) {
 			dispatch(setNewStores(data?.stores));
 		}
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [data]);
 	const handleClick = (item) => {
 		router.push({

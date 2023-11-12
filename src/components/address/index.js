@@ -59,11 +59,13 @@ const Address = (props) => {
     if (AllSaveAddress?.length === 0) {
       refetch();
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   useEffect(() => {
     if (data) {
       dispatch(setAllSaveAddress(data?.addresses));
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [data]);
 
   const handleClick = () => {

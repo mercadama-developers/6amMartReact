@@ -34,9 +34,11 @@ const StoresWithFilter = () => {
     useEffect(() => {
         handleRefetch();
         setType("all");
+            // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [storesType]);
     useEffect(() => {
         handleRefetch();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [type, limit]);
     const handleMore = () => {
         setLimit((prevState) => prevState + 5);

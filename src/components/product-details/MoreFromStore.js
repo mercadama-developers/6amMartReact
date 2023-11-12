@@ -42,6 +42,7 @@ const MoreFromStore = ({ productDetails }) => {
   );
   useEffect(() => {
     refetch();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   const SliderRef = useRef(null);
 

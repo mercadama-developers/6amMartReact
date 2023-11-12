@@ -69,17 +69,20 @@ const BestReviewedItems = (props) => {
     if (bestReviewedItems.products.length === 0) {
       refetch();
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [bestReviewedItems]);
   useEffect(() => {
     if (data) {
       dispatch(setBestReviewedItems(data));
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [data]);
   useEffect(() => {
     if (data) {
       setMenu(["All", ...uniqueCategories?.map((item) => item.name)]);
       setFilteredData(bestReviewedItems.products);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [bestReviewedItems.products]);
 
   useEffect(() => {
@@ -96,6 +99,7 @@ const BestReviewedItems = (props) => {
       setFilteredData(categoryWiseData);
       setReRender(true);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [selectedMenuIndex]);
 
   const slides = () => {

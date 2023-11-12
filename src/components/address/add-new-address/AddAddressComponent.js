@@ -76,6 +76,7 @@ const AddAddressComponent = ({
     //   type: ACTIONS.setLocation,
     //   payload: configData?.default_location,
     // });
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const { data: places, isLoading } = useGetAutocompletePlace(

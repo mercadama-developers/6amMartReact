@@ -73,9 +73,11 @@ const ParcelCheckout = () => {
     if (data) {
       extraChargeRefetch();
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [data]);
   useEffect(() => {
     refetch();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [parcelInfo]);
 
   useEffect(() => {

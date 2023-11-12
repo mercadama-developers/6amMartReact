@@ -22,6 +22,7 @@ const Home = ({configData, landingPageData}) => {
             }
         } else {
         }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [configData]);
     return (
         <>

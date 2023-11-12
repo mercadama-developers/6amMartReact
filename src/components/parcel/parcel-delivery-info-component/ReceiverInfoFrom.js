@@ -63,6 +63,7 @@ const ReceiverInfoFrom = ({
     houseHandler(
       receiverOptionalAddress?.house ? receiverOptionalAddress?.house : ""
     );
+        // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [receiverOptionalAddress]);
   const lanDirection = getLanguage() ? getLanguage() : "ltr";
   return (

@@ -94,15 +94,18 @@ const NewArrivalStores = () => {
     if (newArrivalStores.length === 0) {
       refetch();
     }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [newArrivalStores]);
   console.log({ newArrivalStores });
   useEffect(() => {
     if (data?.stores?.length > 0) {
       dispatch(setNewArrivalStores(data?.stores));
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [data]);
   useEffect(() => {
     popularRefetch();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   useEffect(() => {
     if (popularData?.stores?.length > 0) {

@@ -6,6 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
+    "lint": "next lint",
     "build-development": "env-cmd -f .env.development next build",
     "build-staging": "env-cmd -f .env.staging next build",
     "build-production": "env-cmd -f .env.production next build"
@@ -27,6 +28,8 @@
     "caniuse-lite": "^1.0.30001503",
     "dayjs": "^1.11.7",
     "emoji-picker-react": "^4.4.9",
+    "eslint": "8.29.0",
+    "eslint-config-next": "13.0.6",
     "firebase": "^9.15.0",
     "formik": "^2.2.9",
     "google-map-react": "^2.2.0",
@@ -65,8 +68,6 @@
     "yup": "^0.32.11"
   },
   "devDependencies": {
-    "eslint": "^8.53.0",
-    "eslint-plugin-next": "^0.0.0",
     "prettier": "2.8.0"
   }
 }

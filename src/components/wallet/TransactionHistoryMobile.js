@@ -33,6 +33,7 @@ const TransactionHistoryMobile = ({
         setTrxData([...trxData, ...data?.data]);
       }
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [data]);
   const { ref, inView } = useInView();
 
@@ -44,6 +45,7 @@ const TransactionHistoryMobile = ({
         }
       }
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [inView]);
 
   const { t } = useTranslation();

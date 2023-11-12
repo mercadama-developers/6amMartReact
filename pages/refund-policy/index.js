@@ -12,6 +12,7 @@ const Index = ({configData, landingPageData}) => {
     const {data, refetch, isFetching} = useGetPolicyPage("/refund");
     useEffect(() => {
         refetch();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
     return (
         <>

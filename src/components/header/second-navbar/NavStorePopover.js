@@ -20,11 +20,13 @@ const NavStorePopover = () => {
     if (basicCampaigns.length === 0) {
       refetch();
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   useEffect(() => {
     if (data) {
       dispatch(setBasicCampaigns(data));
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [data]);
   return (
     <Stack

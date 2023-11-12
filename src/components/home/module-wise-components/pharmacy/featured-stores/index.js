@@ -24,6 +24,7 @@ const FeaturedStores = (props) => {
 		useGetStoresByFiltering(pageParams);
 	useEffect(() => {
 		refetch();
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, []);
 	let featuredStores = [];
 	if (data) {

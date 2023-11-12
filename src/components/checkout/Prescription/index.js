@@ -49,6 +49,7 @@ const PrescriptionCheckout = ({ storeId }) => {
   const { data: storeData, refetch } = useGetStoreDetails(storeId);
   useEffect(() => {
     refetch();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [storeId]);
   useEffect(() => {
     const currentLatLng = JSON.parse(localStorage.getItem("currentLatLng"));
@@ -61,6 +62,7 @@ const PrescriptionCheckout = ({ storeId }) => {
       address_type: "Selected Address",
     });
     refetch();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const currentLatLng = JSON.parse(
@@ -87,6 +89,7 @@ const PrescriptionCheckout = ({ storeId }) => {
   );
   useEffect(() => {
     storeData && address && refetchDistance();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [storeData, address]);
   const { mutate: orderMutation, isLoading: orderLoading } = useMutation(
     "order-place",

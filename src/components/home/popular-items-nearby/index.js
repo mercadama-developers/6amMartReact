@@ -44,15 +44,18 @@ const PopularItemsNearby = ({ title, subTitle }) => {
     if (popularItemsNearby.products.length === 0) {
       refetch();
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [popularItemsNearby]);
 
   useEffect(() => {
     if (data) {
       dispatch(setPopularItemsNearby(data));
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [data]);
   useEffect(() => {
     refetch();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   return (
     <HomeComponentsWrapper>
@@ -110,9 +113,8 @@ const PopularItemsNearby = ({ title, subTitle }) => {
                       <NextIcon />
                     </div>
                     {popularItemsNearby?.products?.map((item, index) => (
-                      <SwiperSlide>
+                      <SwiperSlide key={index}>
                         <ProductCard
-                          key={index}
                           item={item}
                           cardheight="160px"
                           horizontalcard="true"

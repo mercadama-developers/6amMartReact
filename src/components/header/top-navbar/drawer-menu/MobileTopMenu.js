@@ -62,6 +62,7 @@ const MobileTopMenu = ({
     if (popularStores.length === 0) {
       popularRefetch();
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   useEffect(() => {
     if (
@@ -71,12 +72,14 @@ const MobileTopMenu = ({
     ) {
       dispatch(setPopularStores(data?.pages?.[0]?.stores));
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [data]);
   useEffect(() => {
     if (getModuleId()) {
       refetch();
       refetchStore();
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const collapsableMenu = {

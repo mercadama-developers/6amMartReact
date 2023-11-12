@@ -86,6 +86,7 @@ const Coupons = (props) => {
   const { data, refetch, isLoading } = useGetCoupons();
   useEffect(() => {
     refetch();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   const background = (theme) =>
     `linear-gradient(${alpha(theme.palette.primary.main, 0.2)}, ${alpha(

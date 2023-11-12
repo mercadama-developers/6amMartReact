@@ -14,6 +14,7 @@ const Index = ({ configData, landingPageData }) => {
   );
   useEffect(() => {
     refetch();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (

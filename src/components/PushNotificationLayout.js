@@ -46,6 +46,7 @@ const PushNotificationLayout = ({ children, refetch, pathName }) => {
     if (userToken) {
       mutate(fcmToken);
     }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [fcmToken]);
 
   const clickHandler = () => {
@@ -98,6 +99,7 @@ const PushNotificationLayout = ({ children, refetch, pathName }) => {
         );
       }
     }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [notification]);
 
   return <>{children}</>;

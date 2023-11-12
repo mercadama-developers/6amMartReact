@@ -34,6 +34,7 @@ const InterestOptions = ({ configData }) => {
 
   useEffect(() => {
     refetch();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   const theme = useTheme();
   const isSmall = useMediaQuery(theme.breakpoints.down("md"));

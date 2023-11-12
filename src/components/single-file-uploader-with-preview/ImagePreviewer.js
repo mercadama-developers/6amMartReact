@@ -7,6 +7,8 @@ import {
 import { InputLabel } from "@mui/material";
 import ImageUploaderThumbnail from "./ImageUploaderThumbnail";
 import DeleteIcon from "@mui/icons-material/Delete";
+import Image from 'next/image';
+
 
 const ImagePreviewer = ({
   anchor,
@@ -39,9 +41,9 @@ const ImagePreviewer = ({
             height={height}
           >
             {typeof file !== "string" ? (
-              <img src={previewImage.url} alt="preview" />
+              <Image src={previewImage.url} alt="preview" />
             ) : (
-              <img src={imageUrl ? `${imageUrl}/${previewImage}` :previewImage } alt="profile" />
+              <Image src={imageUrl ? `${imageUrl}/${previewImage}` :previewImage } alt="profile" />
             )}
           </FilePreviewerWrapper>
         ) : (

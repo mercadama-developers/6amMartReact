@@ -30,6 +30,7 @@ const SaveAddress = ({
   const { openAddressModal } = useSelector((state) => state.addressModel);
   useEffect(() => {
     refetch();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const handleClick = (adds) => {

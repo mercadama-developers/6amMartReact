@@ -133,6 +133,7 @@ const MyOrders = (props) => {
   useEffect(() => {
     refetch();
     dispatch(setOrderType(orderType === 0 ? 0 : 1));
+        // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [orderType, offset]);
 
   useEffect(() => {
@@ -140,6 +141,7 @@ const MyOrders = (props) => {
       setOffSet(1);
       dispatch(setOrderType(currentTab === "ongoing" ? 0 : 1));
     }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [currentTab]);
   // useEffect(() => {
   //   dispatch(setCurrentTab("ongoing"));
@@ -150,6 +152,7 @@ const MyOrders = (props) => {
     } else {
       toast.dismiss();
     }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isFetching]);
   const handleInnerContent = () => {
     if (data) {

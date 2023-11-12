@@ -107,6 +107,7 @@ const ItemCheckout = (props) => {
 
   useEffect(() => {
     refetch();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [storeId]);
 
   useEffect(() => {
@@ -120,6 +121,7 @@ const ItemCheckout = (props) => {
       address_type: "Selected Address",
     });
     refetch();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   const currentLatLng = JSON.parse(
     window.localStorage.getItem("currentLatLng")
@@ -170,6 +172,7 @@ const ItemCheckout = (props) => {
     if (distanceData) {
       extraChargeRefetch();
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [distanceData]);
   const handleChange = (event) => {
     setDayNumber(event.target.value);
@@ -204,9 +207,11 @@ const ItemCheckout = (props) => {
       address_type: "Selected Address",
     });
     refetch();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   useEffect(() => {
     storeData && address && refetchDistance();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [storeData, address]);
 
   useEffect(() => {
@@ -226,6 +231,7 @@ const ItemCheckout = (props) => {
       storeData
     );
     setTotalOrderAmount(total_order_amount);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [cartList, couponDiscount, taxAmount]);
 
   const handleValuesFromCartItems = (variationValues) => {
@@ -536,6 +542,7 @@ const ItemCheckout = (props) => {
   const couponRemove = () => {};
   useEffect(() => {
     orderSuccess && handleOrderSuccess();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [orderSuccess]);
   const handleOrderSuccess = () => {
     if (page === "buysetScheduleAt_now") {
@@ -612,6 +619,7 @@ const ItemCheckout = (props) => {
   };
   useEffect(() => {
     handlePartialPaymentCheck();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [payableAmount]);
 
   const agreeToPartial = () => {

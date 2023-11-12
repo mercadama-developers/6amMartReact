@@ -12,8 +12,12 @@ const Index = ({ configData, landingPageData }) => {
   const { t } = useTranslation();
   const { data, refetch, isFetching } = useGetPolicyPage("/about-us");
   useEffect(() => {
-    refetch();
-  }, []);
+    const fetchData = async () => {
+      await refetch();
+    };
+
+    fetchData();
+  }, [refetch]);
   return (
     <>
       <CssBaseline />

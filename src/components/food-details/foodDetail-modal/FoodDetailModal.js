@@ -97,6 +97,7 @@ const FoodDetailModal = ({
       setSelectedAddOns,
       setOtherSelectedOption
     );
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [product]);
 
   const notify = (i) => toast(i);
@@ -675,6 +676,7 @@ const FoodDetailModal = ({
     if (product) {
       handleTotalPrice();
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [quantity, modalData]);
   const decrementPrice = () => {
     setQuantity((prevQty) => prevQty - 1);

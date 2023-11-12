@@ -31,6 +31,7 @@ const Index = ({ configData, storeDetails }) => {
       }
     } else {
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [configData]);
 
   return (

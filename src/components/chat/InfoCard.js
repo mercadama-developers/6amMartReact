@@ -73,6 +73,7 @@ const InfoCard = ({
   const { data, refetch, isLoading } = useGetUserInfo();
   useEffect(() => {
     refetch();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const userImage = userList?.receiver?.image;

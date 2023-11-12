@@ -12,6 +12,7 @@ const Index = ({configData, landingPageData}) => {
     const {data, refetch, isFetching} = useGetPolicyPage("/shipping-policy");
     useEffect(() => {
         refetch();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
     return (
         <>

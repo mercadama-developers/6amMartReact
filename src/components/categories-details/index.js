@@ -63,12 +63,14 @@ const CategoriesDetails = ({
     if (subCategory !== "true") {
       refetch();
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   useEffect(() => {
     if (id && childesData?.length > 0) {
       setCategoryMenus(childesData);
     }
     setCategoryId(id);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [childesData, id]);
   return (
     <CustomStackFullWidth sx={{ minHeight: "70vh" }}>

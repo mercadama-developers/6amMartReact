@@ -73,6 +73,7 @@ const ManageSearch = ({ zoneid, token, maxwidth, fullWidth }) => {
     if (searchValue && searchValue !== "") {
       getSearchSuggestions();
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [searchValue]);
 
   useEffect(() => {

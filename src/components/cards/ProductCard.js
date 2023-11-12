@@ -219,6 +219,7 @@ const ProductCard = (props) => {
     } else {
       setIsProductExist(false);
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [aliasCartList]);
 
   const getItemFromCartlist = () => {
@@ -227,6 +228,7 @@ const ProductCard = (props) => {
   };
   useEffect(() => {
     wishlistItemExistHandler();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [wishLists]);
   const wishlistItemExistHandler = () => {
     if (wishLists?.item?.find((wishItem) => wishItem.id === item?.id)) {

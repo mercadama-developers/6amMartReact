@@ -17,6 +17,7 @@ const Index = ({ configData }) => {
   const { data, refetch, isFetching } = useGetPolicyPage("/privacy-policy");
   useEffect(() => {
     refetch();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (

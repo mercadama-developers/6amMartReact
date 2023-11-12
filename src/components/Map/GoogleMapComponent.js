@@ -9,6 +9,8 @@ import { GoogleMap, useJsApiLoader } from "@react-google-maps/api";
 import { CircularProgress, Stack, useMediaQuery } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
 import pickMarker from "./assets/pick_marker.png";
+import Image from 'next/image';
+
 
 const GoogleMapComponent = ({
   setDisablePickButton,
@@ -43,6 +45,7 @@ const GoogleMapComponent = ({
       lat: parseFloat(location?.lat),
       lng: parseFloat(location?.lng),
     }),
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     [location?.lng, location?.lng]
   );
 
@@ -143,8 +146,9 @@ const GoogleMapComponent = ({
         options={options}
       >
         {!locationLoading ? (
-          <img
+          <Image
             src={pickMarker.src}
+            alt=""
             style={{
               zIndex: 3,
               position: "absolute",

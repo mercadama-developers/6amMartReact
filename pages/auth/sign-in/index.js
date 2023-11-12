@@ -16,6 +16,7 @@ const Index = ({configData, landingPageData}) => {
             setToken(token)
             router.push('/home')
         }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [])
     return (
         <>

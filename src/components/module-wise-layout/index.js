@@ -22,14 +22,17 @@ const ModuleWiseLayout = ({ configData }) => {
     if (router.pathname === "/home") {
       refetch();
     }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   useEffect(() => {
     if (data?.length > 0) {
       dispatch(setModules(data));
     }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [data]);
   useEffect(() => {
     handleModuleSelect();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [selectedModule]);
   const handleModuleSelect = () => {
     dispatch(setResetStoredData());

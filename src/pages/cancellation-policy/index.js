@@ -12,6 +12,7 @@ const Index = ({configData}) => {
     const {data, refetch, isFetching} = useGetPolicyPage("/cancelation");
     useEffect(() => {
         refetch();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
     return (
         <>

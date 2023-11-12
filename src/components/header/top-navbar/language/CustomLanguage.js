@@ -79,6 +79,7 @@ const CustomLanguage = ({
         i18n.changeLanguage(languageSetting);
       }
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [language]);
 
   useEffect(() => {

@@ -28,11 +28,13 @@ const ModuleWiseNav = (props) => {
 			refetch();
 			//dispatch(setModules(data));
 		}
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [modules]);
 	useEffect(() => {
 		if (data?.length > 0) {
 			dispatch(setModules(data));
 		}
+		// eslint-disable-next-line react-hooks/exhaustive-deps
 	}, [data]);
 	const handleProfileClick = () => {
 		if (token) {

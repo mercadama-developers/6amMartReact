@@ -40,6 +40,7 @@ const RefundModal = (props) => {
   const { data: reasonsData, refetch } = useGetRefundReasons();
   useEffect(() => {
     refetch();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const { t } = useTranslation();

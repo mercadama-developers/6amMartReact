@@ -34,6 +34,7 @@ const MultiFileUploader = (props) => {
   useEffect(() => {
     fileImagesHandler(files);
     // dispatch(setBusinessInfoImageReset(false))
+        // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [files]);
   // useEffect(() => {
   //     setFiles([])

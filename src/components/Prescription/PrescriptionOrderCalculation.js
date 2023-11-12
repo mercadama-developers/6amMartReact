@@ -28,6 +28,7 @@ const PrescriptionOrderCalculation = ({
         useGetVehicleCharge({tempDistance});
     useEffect(() => {
         extraChargeRefetch();
+            // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [distanceData]);
     const getPrescriptionDeliveryFees = (
         storeData,

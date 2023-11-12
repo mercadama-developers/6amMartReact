@@ -19,6 +19,7 @@ const WalletFundBonus = () => {
 
   useEffect(() => {
     refetch();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const settings = {

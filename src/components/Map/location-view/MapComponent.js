@@ -110,6 +110,7 @@ const MapComponent = (props) => {
     if (deliveryManLat) {
       directionRoute();
     }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [deliveryManLat, deliveryManLng, latitude, longitude]);
 
   return isLoaded ? (

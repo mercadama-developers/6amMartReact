@@ -16,6 +16,7 @@ const Coupons = (props) => {
   const [copy, setCopy] = useState(null);
   useEffect(() => {
     refetch();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
